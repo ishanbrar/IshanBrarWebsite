@@ -1,0 +1,17 @@
+{
+  "mapper": [
+    "/projects/mapper/01-home.png",
+    "/projects/mapper/02-tables.png",
+    "/projects/mapper/03-embed.png"
+  ],
+  "ethnic-mapper": [
+    "/projects/ethnic-mapper/01-home.png",
+    "/projects/ethnic-mapper/02-tables.png",
+    "/projects/ethnic-mapper/03-embed.png"
+  ],
+  "mymini": [
+    "/projects/mymini/01-login.png",
+    "/projects/mymini/02-signup.png",
+    "/projects/mymini/03-puzzles.png"
+  ]
+}

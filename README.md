@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IshanBrarWebsite (local)
 
-## Getting Started
+This is a Next.js portfolio site (App Router + Tailwind).
 
-First, run the development server:
+## Run locally
 
 ```bash
+cd site
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshot conventions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Web project screenshots live under:
 
-## Learn More
+`site/public/projects/<slug>/`
 
-To learn more about Next.js, take a look at the following resources:
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`site/public/projects/pga/01.png`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Update the references in `site/src/data/projects.ts` as you add more images.
 
-## Deploy on Vercel
+## Capture web screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+cd site
+npm run capture:screens
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This uses Playwright for web apps like `mapper`, `ethnic-mapper`, and `mymini`.
+
+## Capture iOS screenshots
+
+```bash
+cd site
+npm run capture:ios
+```
+
+Notes:
+
+- `PunjabiTutor` uses its existing UI test and writes directly into `public/projects/punjabitutor/`.
+- `Trivia` and `CornerApp` use a non-invasive launch-only flow that builds the app, boots the simulator, launches it, and captures the initial visible state without modifying those repos.
+- You can target one app with `npm run capture:ios -- --app=punjabitutor`.
+- You can choose a simulator with `npm run capture:ios -- --device="iPhone 16 Pro"`.
+
+## Sync GitHub metadata (optional)
+
+```bash
+cd site
+npm run sync:github
+```
+
+This writes `site/src/data/github-repos.json` for reference.
