@@ -16,7 +16,6 @@ const showcaseProjects = [
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-24">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_18%_12%,var(--hero-glow-a),transparent_42%),radial-gradient(circle_at_84%_16%,var(--hero-glow-b),transparent_36%),radial-gradient(circle_at_52%_92%,var(--hero-glow-c),transparent_44%)] blur-2xl" />
       <Container className="relative grid gap-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] lg:items-start">
         <Reveal className="space-y-8">
           <div className="space-y-5">

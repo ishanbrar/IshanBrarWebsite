@@ -32,7 +32,7 @@ export function SkillsSection() {
                     {cluster.tools.map((tool) => (
                       <span
                         key={tool}
-                        className="rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.04)] px-3 py-1 text-xs font-medium text-[var(--muted)]"
+                        className="rounded-full border border-[var(--border)] bg-[var(--panel-2)] px-3 py-1 text-xs font-medium text-[var(--muted)]"
                       >
                         {tool}
                       </span>

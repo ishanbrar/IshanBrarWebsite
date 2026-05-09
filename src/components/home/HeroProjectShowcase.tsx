@@ -14,8 +14,7 @@ function getShowcaseMedia(project: Project) {
       alt: "Globe illustration for Ethnic Mapper",
       fit: "contain" as const,
       className: "brightness-0 invert opacity-[0.92] p-10 sm:p-14",
-      backdrop:
-        "bg-[radial-gradient(circle_at_50%_38%,rgba(126,212,255,0.16),transparent_26%),radial-gradient(circle_at_50%_55%,rgba(52,211,153,0.14),transparent_34%),linear-gradient(180deg,rgba(9,16,24,0.92),rgba(7,12,18,0.98))]",
+      backdrop: "bg-[rgba(8,10,14,0.96)]",
     };
   }
 
@@ -52,9 +51,6 @@ export function HeroProjectShowcase({
 
   return (
     <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-[rgba(8,10,14,0.92)] text-white shadow-[0_32px_100px_rgba(0,0,0,0.5)]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(255,47,85,0.11),transparent_30%),radial-gradient(circle_at_82%_18%,rgba(52,211,153,0.13),transparent_28%),linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))]" />
-      <div className="pointer-events-none absolute inset-0 opacity-18 [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:24px_24px]" />
-
       <div className="relative p-5 sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <div>

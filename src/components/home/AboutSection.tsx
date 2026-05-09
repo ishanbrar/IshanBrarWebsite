@@ -44,7 +44,7 @@ export function AboutSection() {
             ))}
           </Reveal>
 
-          <Reveal delay={0.08} className="rounded-[32px] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-8 shadow-[var(--shadow)]">
+          <Reveal delay={0.08} className="rounded-[32px] border border-[var(--border)] bg-[var(--panel)] p-8 shadow-[var(--shadow)]">
             <p className="text-sm font-medium uppercase tracking-[0.24em] text-[var(--muted-2)]">
               Working principles
             </p>
@@ -52,7 +52,7 @@ export function AboutSection() {
               {aboutPrinciples.map((principle) => (
                 <div
                   key={principle}
-                  className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
+                  className="rounded-2xl border border-[var(--border)] bg-[var(--panel-2)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
                 >
                   {principle}
                 </div>

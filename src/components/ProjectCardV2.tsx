@@ -57,7 +57,7 @@ export function ProjectCardV2({
             sizes="(min-width: 1024px) 520px, (min-width: 768px) 50vw, 100vw"
           />
         ) : (
-          <div className="flex h-full items-end bg-[radial-gradient(circle_at_top_left,rgba(255,47,85,0.28),transparent_40%),radial-gradient(circle_at_right,rgba(52,211,153,0.22),transparent_45%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-6">
+          <div className="flex h-full items-end bg-[rgba(8,10,14,0.92)] p-6">
             <span className="text-xl font-semibold tracking-tight text-white/90">
               {project.title}
             </span>

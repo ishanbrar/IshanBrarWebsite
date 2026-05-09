@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { JarJarMark } from "@/components/JarJarMark";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const links = [
@@ -11,14 +12,14 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)] shadow-[var(--header-shadow)] backdrop-blur-xl supports-[backdrop-filter]:bg-[var(--header-bg)]">
+    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)] shadow-[var(--header-shadow)] backdrop-blur-md supports-[backdrop-filter]:bg-[var(--header-bg)]">
       <Container className="flex min-h-16 items-center justify-between gap-4 py-3">
         <Link
           href="/"
           className="group inline-flex shrink-0 items-center gap-2 font-semibold tracking-tight"
         >
-          <span className="relative grid h-8 w-8 place-items-center rounded-xl border border-[var(--border)] bg-[var(--panel)] shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset]">
-            <span className="h-2.5 w-2.5 rounded-full bg-[var(--brand)] shadow-[0_0_0_6px_rgba(255,47,85,0.12)]" />
+          <span className="relative grid h-8 w-8 place-items-center rounded-full border border-[var(--border)] bg-[var(--panel-2)] text-foreground">
+            <JarJarMark className="h-5 w-5" />
           </span>
           <span className="text-foreground">Ishan Brar</span>
         </Link>

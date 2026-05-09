@@ -48,7 +48,7 @@ export default async function ProjectPage({
               Back to projects
             </Link>
 
-            <header className="overflow-hidden rounded-[34px] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] shadow-[var(--shadow)]">
+            <header className="overflow-hidden rounded-[34px] border border-[var(--border)] bg-[var(--panel)] shadow-[var(--shadow)]">
               <div className="space-y-8 p-8 sm:p-10 lg:p-12">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
@@ -71,7 +71,7 @@ export default async function ProjectPage({
                     </p>
                   </div>
 
-                  <dl className="grid gap-4 rounded-[28px] border border-[var(--border)] bg-[rgba(255,255,255,0.04)] p-5 text-sm">
+                  <dl className="grid gap-4 rounded-[28px] border border-[var(--border)] bg-[var(--panel-2)] p-5 text-sm">
                     <div>
                       <dt className="text-[var(--muted-2)]">Production date</dt>
                       <dd className="mt-1 text-foreground">
@@ -140,7 +140,7 @@ export default async function ProjectPage({
                 {project.caseStudy.architecture.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-[24px] border border-[var(--border)] bg-[rgba(255,255,255,0.04)] p-5"
+                    className="rounded-[24px] border border-[var(--border)] bg-[var(--panel-2)] p-5"
                   >
                     <h3 className="text-lg font-semibold tracking-tight text-foreground">
                       {item.title}
@@ -156,7 +156,7 @@ export default async function ProjectPage({
 
           <section className="grid gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)]">
             <Reveal delay={0.16}>
-              <div className="rounded-[30px] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-7 shadow-[var(--shadow)]">
+              <div className="rounded-[30px] border border-[var(--border)] bg-[var(--panel)] p-7 shadow-[var(--shadow)]">
                 <p className="text-sm font-medium uppercase tracking-[0.24em] text-[var(--muted-2)]">
                   Most interesting engineering decision
                 </p>
@@ -170,7 +170,7 @@ export default async function ProjectPage({
                   {project.caseStudy.interestingDecision.bullets.map((bullet) => (
                     <div
                       key={bullet}
-                      className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
+                      className="rounded-2xl border border-[var(--border)] bg-[var(--panel-2)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
                     >
                       {bullet}
                     </div>
@@ -188,7 +188,7 @@ export default async function ProjectPage({
                   {project.stack.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.04)] px-3 py-2 text-xs font-medium text-[var(--muted)]"
+                      className="rounded-full border border-[var(--border)] bg-[var(--panel-2)] px-3 py-2 text-xs font-medium text-[var(--muted)]"
                     >
                       {item}
                     </span>
@@ -202,7 +202,7 @@ export default async function ProjectPage({
                   {project.caseStudy.outcomes.map((outcome) => (
                     <div
                       key={outcome}
-                      className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
+                      className="rounded-2xl border border-[var(--border)] bg-[var(--panel-2)] px-4 py-4 text-sm leading-6 text-[var(--muted)]"
                     >
                       {outcome}
                     </div>
@@ -221,7 +221,7 @@ export default async function ProjectPage({
                 {project.features.map((feature) => (
                   <div
                     key={feature}
-                    className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] p-4 text-sm leading-6 text-[var(--muted)]"
+                    className="rounded-2xl border border-[var(--border)] bg-[var(--panel-2)] p-4 text-sm leading-6 text-[var(--muted)]"
                   >
                     {feature}
                   </div>
@@ -239,7 +239,7 @@ export default async function ProjectPage({
                 {project.caseStudy.lessons.map((lesson) => (
                   <div
                     key={lesson}
-                    className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] p-4 text-sm leading-6 text-[var(--muted)]"
+                    className="rounded-2xl border border-[var(--border)] bg-[var(--panel-2)] p-4 text-sm leading-6 text-[var(--muted)]"
                   >
                     {lesson}
                   </div>
