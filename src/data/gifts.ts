@@ -13,7 +13,8 @@ export type GiftIcon =
   | "golf"
   | "gurdwara"
   | "code"
-  | "bot";
+  | "bot"
+  | "chat";
 
 export type Gift = {
   id: string;
@@ -164,18 +165,33 @@ export const gifts: Gift[] = [
       "It is a design exercise that made later community sites faster and more confident.",
   },
   {
-    id: "bot-backup",
-    title: "OpenClaw Telegram Bot Backup",
-    size: 0.64,
-    color: "#2f4858",
-    iconColor: "#e8f4f8",
-    icon: "bot",
+    id: "bot-tutor",
+    title: "Gurpreet Ji — Punjabi Tutor Bot (Telegram)",
+    size: 0.66,
+    color: "#b85c00",
+    iconColor: "#fff8ef",
+    icon: "gurmukhi",
     link: { type: "github", url: "https://github.com/ishanbrar/bot_backup" },
     letter:
-      "bot_backup is the infrastructure repo for my Telegram bots on a home server: OpenClaw gateway config (Telegram channel, tool policies, auth profiles) plus the Punjabi tutor bot that teaches Doabi as “Gurpreet Ji” with curriculum JSON, progress tracking, and OpenAI-driven lessons. " +
-      "It also holds sync scripts, systemd units, crontab jobs (daily quotes, weather, backups), and mirrored punjabi-tutor server files so services recover if a file disappears. " +
-      "The tutor bot enforces authorized chat, tracks vocabulary mastery, and follows a structured lesson plan—not a stateless chat dump. " +
-      "I built this so Jar Jar / OpenClaw and the language tutor stay deployable, restorable, and documented in one place. " +
-      "It is ops for bots I actually use, not a hello-world Telegram sample.",
+      "This is my Telegram Punjabi tutor: a structured Doabi teacher named Gurpreet Ji who follows curriculum.json, tracks vocabulary mastery, streaks, and lesson progress in progress.json. " +
+      "You message the bot in Telegram and get guided lessons, quizzes, and replies in a warm ustaad-ji tone—not a generic chatbot ramble. " +
+      "The implementation lives in bot_backup (telegram-bot.js and punjabi-tutor mirrors) with authorized chat, session history, and optional voice via TTS. " +
+      "Lesson dialogue uses OpenAI models tuned for teaching; it is separate from my Jar Jar assistant that runs on Gemini Flash. " +
+      "I built it so I could practice Punjabi daily in the same app I already live in: Telegram.",
+  },
+  {
+    id: "bot-jarjar",
+    title: "Jar Jar — Telegram Assistant (Gemini Flash)",
+    size: 0.62,
+    color: "#2f4858",
+    iconColor: "#e8f4f8",
+    icon: "chat",
+    link: { type: "github", url: "https://github.com/ishanbrar/bot_backup" },
+    letter:
+      "Jar Jar is my personal Telegram assistant powered by OpenClaw with Google Gemini 2.5 Flash Lite (via OpenRouter) underneath—you can have normal back-and-forth text conversations in Telegram, not just one-shot commands. " +
+      "The gateway config in bot_backup wires Telegram DMs to the model with pairing, tool policies, and restartable services on a home server. " +
+      "On a schedule it also pushes Stoic, Ernst Jünger, and Sikhi quotes, plus a morning NYC weather check-in—cron scripts in the same repo post those messages to Telegram. " +
+      "Sync jobs and systemd units keep OpenClaw env, SSH, and configs restored if anything breaks. " +
+      "I built it to combine a capable Gemini Flash chat companion with small daily rituals I actually read.",
   },
 ];
