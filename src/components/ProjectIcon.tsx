@@ -100,6 +100,17 @@ export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconP
           <path d="M13.5 6l-3 12" />
         </svg>
       );
+    case "bot":
+      return (
+        <svg {...props}>
+          <rect x="5" y="8" width="14" height="10" rx="3" />
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+          <circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none" />
+          <circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none" />
+          <path d="M10 16h4" />
+          <path d="M5 12H3M21 12h-2" />
+        </svg>
+      );
     default:
       return null;
   }

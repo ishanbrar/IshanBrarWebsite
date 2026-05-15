@@ -49,10 +49,7 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
                 animate={{ scaleX: 1 }}
                 transition={{ delay: 0.15, duration: 0.4 }}
               />
-              <p className="text-center font-serif text-xs uppercase tracking-[0.35em] text-[#9a8475]">
-                A note inside
-              </p>
-              <h2 id="letter-title" className="mt-3 text-center font-serif text-2xl text-[#2a211c]">
+              <h2 id="letter-title" className="text-center font-serif text-2xl text-[#2a211c]">
                 {gift.title}
               </h2>
               <motion.p

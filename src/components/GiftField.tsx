@@ -6,7 +6,7 @@ import { GiftBox } from "@/components/GiftBox";
 import { ProjectLetter } from "@/components/ProjectLetter";
 import { CenterUserIcon } from "@/components/CenterUserIcon";
 
-const WHEEL_RADIUS_PERCENT = 40;
+const WHEEL_RADIUS_PERCENT = 42;
 
 function wheelPosition(index: number, total: number) {
   const angle = (index / total) * 2 * Math.PI - Math.PI / 2;
@@ -22,7 +22,7 @@ export function GiftField() {
   return (
     <>
       <section
-        className="flex min-h-[calc(100vh-8rem)] w-full items-center justify-center overflow-hidden px-4 py-6"
+        className="flex min-h-[calc(100vh-3.5rem)] w-full items-center justify-center overflow-hidden px-4 py-4"
         aria-label="Projects"
       >
         <div className="relative aspect-square w-[min(88vw,22rem)] max-w-full sm:w-[min(78vw,24rem)]">

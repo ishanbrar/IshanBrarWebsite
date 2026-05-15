@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Noto_Sans_Gurmukhi } from "next/font/google";
 import "./globals.css";
-import { Nav } from "@/components/Nav";
 import { siteUrl } from "@/lib/site";
 
 const sans = DM_Sans({
@@ -41,9 +40,8 @@ export default function RootLayout({
       className={`${sans.variable} ${serif.variable} ${gurmukhi.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans text-[#3a2f28]">
-        <Nav />
         <div className="flex-1">{children}</div>
-        <footer className="relative z-30 border-t border-white/20 bg-white/25 py-6 text-center text-xs tracking-wide text-[#6b5d52] backdrop-blur-md">
+        <footer className="relative z-30 border-t border-white/20 bg-white/25 py-5 text-center text-xs tracking-wide text-[#6b5d52] backdrop-blur-md">
           <p>© {new Date().getFullYear()} Ishan Singh Brar</p>
         </footer>
       </body>

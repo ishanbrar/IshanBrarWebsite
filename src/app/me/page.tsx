@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Me",
@@ -8,7 +9,13 @@ export const metadata: Metadata = {
 
 export default function MePage() {
   return (
-    <main className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-2xl flex-col items-center px-6 py-16 sm:py-20">
+    <main className="mx-auto flex min-h-[calc(100vh-3.5rem)] max-w-2xl flex-col items-center px-6 py-12 sm:py-16">
+      <Link
+        href="/"
+        className="mb-8 text-sm text-[#6b5d52] underline-offset-4 hover:text-[#2a211c] hover:underline"
+      >
+        ← Home
+      </Link>
       <div className="relative h-44 w-44 overflow-hidden rounded-full border-4 border-white/80 shadow-[0_16px_40px_rgba(0,0,0,0.18)] sm:h-52 sm:w-52">
         <Image
           src="/me/headshot.png"
