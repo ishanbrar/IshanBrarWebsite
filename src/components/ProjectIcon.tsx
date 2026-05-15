@@ -7,6 +7,21 @@ type ProjectIconProps = {
 };
 
 export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconProps) {
+  if (icon === "gurmukhi") {
+    return (
+      <span
+        className={`leading-none font-normal ${className ?? ""}`}
+        style={{
+          ...style,
+          fontFamily: 'var(--font-gurmukhi), "Raavi", "AnmolUni", sans-serif',
+        }}
+        aria-hidden
+      >
+        ੳ
+      </span>
+    );
+  }
+
   const props = {
     className,
     style,
@@ -30,18 +45,6 @@ export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconP
           <path d="M9 21h6" />
         </svg>
       );
-    case "language":
-      return (
-        <svg {...props}>
-          <path d="M4 5h8" />
-          <path d="M8 5v14" />
-          <path d="M5 19h6" />
-          <path d="M14 9h6" />
-          <path d="M17 9v10" />
-          <path d="M14 14h6" />
-          <path d="M14 19h6" />
-        </svg>
-      );
     case "map":
       return (
         <svg {...props}>
@@ -56,20 +59,18 @@ export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconP
           <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
         </svg>
       );
-    case "trivia":
+    case "question":
       return (
         <svg {...props}>
-          <path d="M8 4h8l2 4H6l2-4z" />
-          <path d="M6 8v4a6 6 0 0 0 12 0V8" />
-          <path d="M9 20h6" />
-          <path d="M10 16h4" />
+          <path d="M9.5 9a2.5 2.5 0 1 1 4.2 1.8c-.8.6-1.2 1.2-1.2 2.2" />
+          <circle cx="12" cy="18" r="0.75" fill="currentColor" stroke="none" />
         </svg>
       );
-    case "corner":
+    case "book":
       return (
         <svg {...props}>
-          <path d="M5 5h10v10H5z" />
-          <path d="M9 9h10v10H9z" fill="currentColor" fillOpacity={0.2} />
+          <path d="M5 5c2-1 4-1 7 0 3-1 5-1 7 0v14c-2-1-4-1-7 0-3-1-5-1-7 0V5z" />
+          <path d="M12 5v14" />
         </svg>
       );
     case "golf":
@@ -91,13 +92,12 @@ export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconP
           <path d="M9 5l3-2 3 2" />
         </svg>
       );
-    case "citrus":
+    case "code":
       return (
         <svg {...props}>
-          <circle cx="12" cy="13" r="7" />
-          <path d="M12 6V3" />
-          <path d="M9 4l3-2 3 2" />
-          <path d="M8 13h8M12 9v8" />
+          <path d="M8 8l-4 4 4 4" />
+          <path d="M16 8l4 4-4 4" />
+          <path d="M13.5 6l-3 12" />
         </svg>
       );
     default:

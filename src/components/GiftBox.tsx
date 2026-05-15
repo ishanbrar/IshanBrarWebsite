@@ -9,7 +9,7 @@ type GiftBoxProps = {
 };
 
 export function GiftBox({ gift, onOpen }: GiftBoxProps) {
-  const dim = Math.round(56 * gift.size);
+  const dim = Math.round(48 * gift.size);
 
   return (
     <button

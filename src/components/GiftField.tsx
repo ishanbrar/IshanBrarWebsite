@@ -5,18 +5,34 @@ import { gifts, type Gift } from "@/data/gifts";
 import { GiftBox } from "@/components/GiftBox";
 import { ProjectLetter } from "@/components/ProjectLetter";
 
+const WHEEL_RADIUS_PERCENT = 40;
+
+function wheelPosition(index: number, total: number) {
+  const angle = (index / total) * 2 * Math.PI - Math.PI / 2;
+  return {
+    left: `${50 + WHEEL_RADIUS_PERCENT * Math.cos(angle)}%`,
+    top: `${50 + WHEEL_RADIUS_PERCENT * Math.sin(angle)}%`,
+  };
+}
+
 export function GiftField() {
   const [openGift, setOpenGift] = useState<Gift | null>(null);
 
   return (
     <>
       <section
-        className="flex min-h-[calc(100vh-8rem)] w-full items-center justify-center px-4 py-10"
+        className="flex min-h-[calc(100vh-8rem)] w-full items-center justify-center overflow-hidden px-4 py-6"
         aria-label="Projects"
       >
-        <div className="flex max-w-full flex-nowrap items-end justify-center gap-3 overflow-x-auto pb-2 md:gap-4">
-          {gifts.map((gift) => (
-            <GiftBox key={gift.id} gift={gift} onOpen={setOpenGift} />
+        <div className="relative aspect-square w-[min(88vw,22rem)] max-w-full sm:w-[min(78vw,24rem)]">
+          {gifts.map((gift, index) => (
+            <div
+              key={gift.id}
+              className="absolute -translate-x-1/2 -translate-y-1/2"
+              style={wheelPosition(index, gifts.length)}
+            >
+              <GiftBox gift={gift} onOpen={setOpenGift} />
+            </div>
           ))}
         </div>
       </section>

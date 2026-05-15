@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans, Noto_Sans_Gurmukhi } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { siteUrl } from "@/lib/site";
@@ -13,6 +13,12 @@ const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-serif",
+});
+
+const gurmukhi = Noto_Sans_Gurmukhi({
+  subsets: ["gurmukhi"],
+  weight: ["500", "700"],
+  variable: "--font-gurmukhi",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${sans.variable} ${serif.variable} ${gurmukhi.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col font-sans text-[#3a2f28]">
         <Nav />
         <div className="flex-1">{children}</div>

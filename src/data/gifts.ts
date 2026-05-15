@@ -5,14 +5,14 @@ export type GiftLink =
 
 export type GiftIcon =
   | "tree"
-  | "language"
+  | "gurmukhi"
   | "map"
   | "crossword"
-  | "trivia"
-  | "corner"
+  | "question"
+  | "book"
   | "golf"
   | "gurdwara"
-  | "citrus";
+  | "code";
 
 export type Gift = {
   id: string;
@@ -25,12 +25,12 @@ export type Gift = {
   letter: string;
 };
 
-/** Larger `size` = bigger tile in the row. */
+/** Larger `size` = bigger tile on the wheel. Order sets position (first = top). */
 export const gifts: Gift[] = [
   {
     id: "legatree",
     title: "LegaTree",
-    size: 1.45,
+    size: 1.4,
     color: "#2d6a4f",
     iconColor: "#d8f3dc",
     icon: "tree",
@@ -44,10 +44,10 @@ export const gifts: Gift[] = [
   {
     id: "punjabitutor",
     title: "Punjabi Tutor",
-    size: 1.28,
+    size: 1.26,
     color: "#c45c00",
     iconColor: "#fff3e0",
-    icon: "language",
+    icon: "gurmukhi",
     link: { type: "placeholder" },
     letter:
       "Punjabi Tutor is my answer to learning a language that lives in my home but rarely gets the thoughtful app treatment it deserves. " +
@@ -58,7 +58,7 @@ export const gifts: Gift[] = [
   {
     id: "ethnic-mapper",
     title: "Ethnic Mapper",
-    size: 1.15,
+    size: 1.14,
     color: "#1d6ea5",
     iconColor: "#e3f2fd",
     icon: "map",
@@ -89,7 +89,7 @@ export const gifts: Gift[] = [
     size: 0.94,
     color: "#7b2cbf",
     iconColor: "#f3e8ff",
-    icon: "trivia",
+    icon: "question",
     link: { type: "github", url: "https://github.com/ishanbrar" },
     letter:
       "Trivia Duel is a head-to-head quiz game where fairness and speed matter as much as the questions themselves. " +
@@ -104,7 +104,7 @@ export const gifts: Gift[] = [
     size: 0.88,
     color: "#e76f51",
     iconColor: "#fff5f2",
-    icon: "corner",
+    icon: "book",
     link: { type: "placeholder" },
     letter:
       "Corner is an iOS app built around calm browsing—content that feels curated, navigation that stays out of the way. " +
@@ -142,16 +142,16 @@ export const gifts: Gift[] = [
   },
   {
     id: "dfwss2",
-    title: "Astro Citrus",
+    title: "DFWSS2",
     size: 0.7,
-    color: "#f4a261",
-    iconColor: "#2d1b0e",
-    icon: "citrus",
-    link: { type: "site", url: "https://astrocitrus.netlify.app" },
+    color: "#5c4d7a",
+    iconColor: "#f0ecf7",
+    icon: "code",
+    link: { type: "github", url: "https://github.com/ishanbrar/DFWSS2" },
     letter:
-      "Astro Citrus is a content-forward site experiment—typography, rhythm, and responsive layout doing most of the talking. " +
-      "I rebuilt the experience in Astro to keep pages fast and the authoring model simple. " +
-      "It was a chance to practice taste in the small decisions: spacing, hierarchy, and how a page breathes on mobile. " +
-      "I made it to remind myself that even a quieter site deserves the same design discipline as a complex app.",
+      "DFWSS2 is an Astro-based site rebuild focused on typography, layout, and responsive structure—a clone exercise that became a design study. " +
+      "I wanted to practice rebuilding a polished content site from scratch while keeping pages fast and the authoring model simple. " +
+      "It was a chance to refine spacing, hierarchy, and how a page breathes on mobile without the noise of a larger product. " +
+      "I made it to sharpen my eye for the quiet details that make a site feel finished.",
   },
 ];
