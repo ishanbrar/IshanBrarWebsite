@@ -1,83 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
-  --font-sans: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont,
-    "Helvetica Neue", "Segoe UI", sans-serif;
-  --font-mono: "SFMono-Regular", "SF Mono", ui-monospace, Menlo, monospace;
-
-  --bg0: #08090c;
-  --bg1: #101217;
-  --panel: rgba(255, 255, 255, 0.045);
-  --panel-2: rgba(255, 255, 255, 0.065);
-  --border: rgba(255, 255, 255, 0.10);
-  --border-2: rgba(255, 255, 255, 0.14);
-  --foreground: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.68);
-  --muted-2: rgba(255, 255, 255, 0.55);
-  --brand: #f3f4f6;
-  --brand-2: #34d399;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
-  --header-bg: rgba(10, 12, 16, 0.74);
-  --header-hover: rgba(255, 255, 255, 0.06);
-  --header-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
-}
-
-@theme inline {
-  --color-background: var(--bg0);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-}
-
-html.light {
-  color-scheme: light;
-  --bg0: #fbfbfd;
-  --bg1: #f5f6f8;
-  --panel: rgba(255, 255, 255, 0.76);
-  --panel-2: rgba(255, 255, 255, 0.92);
-  --border: rgba(0, 0, 0, 0.08);
-  --border-2: rgba(0, 0, 0, 0.12);
-  --foreground: rgba(0, 0, 0, 0.92);
-  --muted: rgba(0, 0, 0, 0.68);
-  --muted-2: rgba(0, 0, 0, 0.55);
-  --brand: #111827;
-  --shadow: 0 24px 60px rgba(15, 23, 42, 0.06);
-  --header-bg: rgba(255, 255, 255, 0.84);
-  --header-hover: rgba(0, 0, 0, 0.045);
-  --header-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
 }
 
 body {
-  background: linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
-  min-height: 100dvh;
-  color: var(--foreground);
+  font-family: var(--font-sans);
+  background: #f5efe8;
 }
 
-a,
-button {
-  transition:
-    color 180ms ease,
-    background-color 180ms ease,
-    border-color 180ms ease,
-    transform 180ms ease,
-    opacity 180ms ease;
+.font-serif,
+[class*="font-serif"] {
+  font-family: var(--font-serif), Georgia, serif;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+.letter-card {
+  background-image:
+    linear-gradient(180deg, rgba(255, 250, 244, 0.98), rgba(255, 247, 238, 0.98)),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 27px,
+      rgba(210, 196, 180, 0.12) 27px,
+      rgba(210, 196, 180, 0.12) 28px
+    );
+}
 
-  * {
-    scroll-behavior: auto !important;
-  }
+.gift-box:focus-visible {
+  outline: none;
 }

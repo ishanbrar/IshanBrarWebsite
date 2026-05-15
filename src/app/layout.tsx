@@ -1,17 +1,26 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
-import { Container } from "@/components/Container";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { MotionProvider } from "@/components/motion/MotionProvider";
 import { siteUrl } from "@/lib/site";
+
+const sans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const serif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
   title: {
-    default: "Ishan Brar",
-    template: "%s · Ishan Brar",
+    default: "Ishan Singh Brar",
+    template: "%s · Ishan Singh Brar",
   },
-  description: "Portfolio showcasing projects, apps, and engineering work by Ishan Brar.",
+  description: "A minimalist portfolio of projects by Ishan Singh Brar.",
   metadataBase: new URL(siteUrl),
 };
 
@@ -21,33 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="h-full antialiased"
-      suppressHydrationWarning
-    >
-      <body className="min-h-full flex flex-col bg-background font-sans text-foreground selection:bg-white/15 selection:text-white">
-        <ThemeProvider>
-          <MotionProvider>
-            <Nav />
-            <div className="flex-1">{children}</div>
-            <footer className="border-t border-[var(--border)] py-12">
-              <Container className="flex flex-col gap-4 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-                <p>© {new Date().getFullYear()} Ishan Brar</p>
-                <p className="flex gap-4">
-                  <a
-                    href="https://github.com/ishanbrar"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-foreground"
-                  >
-                    GitHub
-                  </a>
-                </p>
-              </Container>
-            </footer>
-          </MotionProvider>
-        </ThemeProvider>
+    <html lang="en" className={`${sans.variable} ${serif.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col font-sans text-[#3a2f28]">
+        <Nav />
+        <div className="flex-1">{children}</div>
+        <footer className="relative z-30 border-t border-white/20 bg-white/25 py-6 text-center text-xs tracking-wide text-[#6b5d52] backdrop-blur-md">
+          <p>© {new Date().getFullYear()} Ishan Singh Brar</p>
+        </footer>
       </body>
     </html>
   );

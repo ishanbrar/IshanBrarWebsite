@@ -1,52 +1,36 @@
+"use client";
+
 import Link from "next/link";
-import { Container } from "@/components/Container";
-import { JarJarMark } from "@/components/JarJarMark";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/#about", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/me", label: "Me" },
 ];
 
 export function Nav() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)] shadow-[var(--header-shadow)] backdrop-blur-md supports-[backdrop-filter]:bg-[var(--header-bg)]">
-      <Container className="flex min-h-16 items-center justify-between gap-4 py-3">
-        <Link
-          href="/"
-          className="group inline-flex shrink-0 items-center gap-2 font-semibold tracking-tight"
-        >
-          <span className="relative grid h-8 w-8 place-items-center rounded-full border border-[var(--border)] bg-[var(--panel-2)] text-foreground">
-            <JarJarMark className="h-5 w-5" />
-          </span>
-          <span className="text-foreground">Ishan Brar</span>
-        </Link>
+  const pathname = usePathname();
 
-        <div className="flex items-center gap-2">
-          <nav className="hidden items-center gap-1 text-sm md:flex">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-full px-3 py-2 text-foreground/75 hover:bg-[var(--header-hover)] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <a
-              href="https://github.com/ishanbrar"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full px-3 py-2 text-foreground/75 hover:bg-[var(--header-hover)] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+  return (
+    <header className="relative z-30 border-b border-white/20 bg-white/30 backdrop-blur-md">
+      <nav className="mx-auto flex max-w-5xl items-center justify-center gap-8 px-6 py-4 text-sm font-medium tracking-wide text-[#3a2f28]">
+        {links.map((link) => {
+          const active = pathname === link.href;
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={
+                active
+                  ? "text-[#2a211c] underline decoration-[#d91414] decoration-2 underline-offset-8"
+                  : "text-[#5c4f45] hover:text-[#2a211c]"
+              }
             >
-              GitHub
-            </a>
-          </nav>
-          <ThemeToggle />
-        </div>
-      </Container>
+              {link.label}
+            </Link>
+          );
+        })}
+      </nav>
     </header>
   );
 }
