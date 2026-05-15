@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Me",
-  description: "About Ishan Singh Brar.",
+  description:
+    "Ishan Singh Brar — B.S. Computer Science, CISSP, builder, golfer, and portfolio of apps and sites.",
 };
 
 export default function MePage() {
@@ -31,40 +32,22 @@ export default function MePage() {
       </h1>
 
       <div className="mt-12 space-y-8 font-serif text-[1.05rem] leading-relaxed text-[#4a3f38]">
-        <section>
-          <h2 className="sr-only">Who I am</h2>
-          <p>
-            I am a builder who splits time between SwiftUI apps, thoughtful web experiences, and
-            the quiet engineering that makes both feel trustworthy. I study computer science at UT
-            Dallas and treat every project—whether a family tree, a gurdwara site, or a map of
-            demographic stories—as a chance to practice craft with empathy. I care about interfaces
-            that feel calm under pressure and products that respect the people using them.
-          </p>
-        </section>
+        <p>
+          TL;DR: I build stuff with AI that I never would have had the patience to do the right way.
+          Thank God for that, because I&apos;ve always been more of an ideator than a bot.
+        </p>
 
-        <section>
-          <h2 className="sr-only">My goals</h2>
-          <p>
-            My goal is to keep shipping work that is both technically sound and emotionally clear:
-            tools families actually open, communities proud to share, and experiments that teach me
-            something new. I want to deepen my skills across mobile, web, and data-heavy products
-            while staying close to the why behind each build. Long term, I am aiming for roles and
-            collaborations where I can own the full arc—from first sketch to deployed product—and
-            keep raising the bar on taste, performance, and accessibility.
-          </p>
-        </section>
+        <p>
+          B.S. Computer Science, CISSP, and cybersec experience at two industry leading consulting
+          firms. More importantly, I am a 5 handicap golfer (not joking), pan-sport athlete, and
+          prideful student of history.
+        </p>
 
-        <section>
-          <h2 className="sr-only">What motivates me</h2>
-          <p>
-            I am motivated by heritage, competition, and curiosity in equal measure. Language apps,
-            trivia duels, and crossword rituals scratch the itch to grow and play; LegaTree and
-            community sites ground me in people who matter; mapping projects feed a fascination with
-            how places shape identity. When a cousin texts that the family tree finally makes sense,
-            or a friend keeps returning to a daily puzzle, that is the signal I build for—not
-            résumé lines, but moments that feel useful and alive.
-          </p>
-        </section>
+        <p>
+          My motivations may be easy to guess given my portfolio of work. One thing I&apos;d like to
+          point out: this is only the work that the clanker&apos;s dumb policies ALLOWED me to
+          create. There is much better stuff in the pipeline!
+        </p>
       </div>
     </main>
   );

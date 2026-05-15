@@ -11,6 +11,12 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
+## Production domain
+
+Canonical URL: **https://www.ishanbrar.com**
+
+Copy `.env.example` to `.env.local` for local testing, and set `NEXT_PUBLIC_SITE_URL` in Vercel for production deploys.
+
 ## Screenshot conventions
 
 Web project screenshots live under:
