@@ -4,6 +4,7 @@ import { useState } from "react";
 import { gifts, type Gift } from "@/data/gifts";
 import { GiftBox } from "@/components/GiftBox";
 import { ProjectLetter } from "@/components/ProjectLetter";
+import { CenterUserIcon } from "@/components/CenterUserIcon";
 
 const WHEEL_RADIUS_PERCENT = 40;
 
@@ -25,6 +26,7 @@ export function GiftField() {
         aria-label="Projects"
       >
         <div className="relative aspect-square w-[min(88vw,22rem)] max-w-full sm:w-[min(78vw,24rem)]">
+          <CenterUserIcon />
           {gifts.map((gift, index) => (
             <div
               key={gift.id}
