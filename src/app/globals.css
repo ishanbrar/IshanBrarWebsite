@@ -30,3 +30,25 @@ body {
 .gift-box:focus-visible {
   outline: none;
 }
+
+.quote-ticker-viewport {
+  width: 100%;
+}
+
+.quote-ticker-track {
+  white-space: nowrap;
+  animation: quote-ticker-scroll 1200s linear infinite;
+}
+
+.quote-ticker:hover .quote-ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes quote-ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

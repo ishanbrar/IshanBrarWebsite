@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "Dogtags_emblem_MW2",
+    "src": "/emblems/mw2/Dogtags_emblem_MW2.png"
+  },
+  {
+    "id": "Staff_Sergeant_Emblem_MW2",
+    "src": "/emblems/mw2/Staff_Sergeant_Emblem_MW2.png"
+  },
+  {
+    "id": "2nd_Lieutenant_Emblem_MW2",
+    "src": "/emblems/mw2/2nd_Lieutenant_Emblem_MW2.png"
+  },
+  {
+    "id": "Brigadier_General_Emblem_MW2",
+    "src": "/emblems/mw2/Brigadier_General_Emblem_MW2.png"
+  },
+  {
+    "id": "MiG_Emblem_MW2",
+    "src": "/emblems/mw2/MiG_Emblem_MW2.png"
+  },
+  {
+    "id": "Stryker_Emblem_MW2",
+    "src": "/emblems/mw2/Stryker_Emblem_MW2.png"
+  },
+  {
+    "id": "Paratrooper_Emblem_MW2",
+    "src": "/emblems/mw2/Paratrooper_Emblem_MW2.png"
+  },
+  {
+    "id": "Shotgun_Shells_Emblem_MW2",
+    "src": "/emblems/mw2/Shotgun_Shells_Emblem_MW2.png"
+  },
+  {
+    "id": "Private_Emblem_MW2",
+    "src": "/emblems/mw2/Private_Emblem_MW2.png"
+  },
+  {
+    "id": "Sergeant_First_Class_Emblem_MW2",
+    "src": "/emblems/mw2/Sergeant_First_Class_Emblem_MW2.png"
+  },
+  {
+    "id": "1st_Lieutenant_Emblem_MW2",
+    "src": "/emblems/mw2/1st_Lieutenant_Emblem_MW2.png"
+  },
+  {
+    "id": "Major_General_Emblem_MW2",
+    "src": "/emblems/mw2/Major_General_Emblem_MW2.png"
+  },
+  {
+    "id": "B2_Emblem_MW2",
+    "src": "/emblems/mw2/B2_Emblem_MW2.png"
+  },
+  {
+    "id": "Hummer_Emblem_MW2",
+    "src": "/emblems/mw2/Hummer_Emblem_MW2.png"
+  },
+  {
+    "id": "Noseart_emblem_MW2",
+    "src": "/emblems/mw2/Noseart_emblem_MW2.png"
+  },
+  {
+    "id": "Rapid_Fire_Emblem_MW2",
+    "src": "/emblems/mw2/Rapid_Fire_Emblem_MW2.png"
+  },
+  {
+    "id": "Private_First_Class_Emblem_MW2",
+    "src": "/emblems/mw2/Private_First_Class_Emblem_MW2.png"
+  },
+  {
+    "id": "Master_Sergeant_Emblem_MW2",
+    "src": "/emblems/mw2/Master_Sergeant_Emblem_MW2.png"
+  },
+  {
+    "id": "Captain_Emblem_MW2",
+    "src": "/emblems/mw2/Captain_Emblem_MW2.png"
+  },
+  {
+    "id": "Lieutenant_General_Emblem_MW2",
+    "src": "/emblems/mw2/Lieutenant_General_Emblem_MW2.png"
+  },
+  {
+    "id": "Harrier_Emblem_MW2",
+    "src": "/emblems/mw2/Harrier_Emblem_MW2.png"
+  },
+  {
+    "id": "Launcher_Emblem_MW2",
+    "src": "/emblems/mw2/Launcher_Emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Medic_Emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Medic_Emblem_MW2.png"
+  },
+  {
+    "id": "FMJ_Emblem_MW2",
+    "src": "/emblems/mw2/FMJ_Emblem_MW2.png"
+  },
+  {
+    "id": "Specialist_Emblem_MW2",
+    "src": "/emblems/mw2/Specialist_Emblem_MW2.png"
+  },
+  {
+    "id": "First_Sergeant_Emblem_MW2",
+    "src": "/emblems/mw2/First_Sergeant_Emblem_MW2.png"
+  },
+  {
+    "id": "Major_Emblem_MW2",
+    "src": "/emblems/mw2/Major_Emblem_MW2.png"
+  },
+  {
+    "id": "General_Emblem_MW2",
+    "src": "/emblems/mw2/General_Emblem_MW2.png"
+  },
+  {
+    "id": "F15_Emblem_MW2",
+    "src": "/emblems/mw2/F15_Emblem_MW2.png"
+  },
+  {
+    "id": "Tank_Emblem_MW2",
+    "src": "/emblems/mw2/Tank_Emblem_MW2.png"
+  },
+  {
+    "id": "Heartbeat_Sensor_Emblem_MW2",
+    "src": "/emblems/mw2/Heartbeat_Sensor_Emblem_MW2.png"
+  },
+  {
+    "id": "SAS_Beret_Emblem_MW2",
+    "src": "/emblems/mw2/SAS_Beret_Emblem_MW2.png"
+  },
+  {
+    "id": "Corporal_Emblem_MW2",
+    "src": "/emblems/mw2/Corporal_Emblem_MW2.png"
+  },
+  {
+    "id": "Sergeant_Major_Emblem_MW2",
+    "src": "/emblems/mw2/Sergeant_Major_Emblem_MW2.png"
+  },
+  {
+    "id": "Lieutenant_Colonel_Emblem_MW2",
+    "src": "/emblems/mw2/Lieutenant_Colonel_Emblem_MW2.png"
+  },
+  {
+    "id": "Commander_Emblem_MW2",
+    "src": "/emblems/mw2/Commander_Emblem_MW2.png"
+  },
+  {
+    "id": "Pave_Low_Emblem_MW2",
+    "src": "/emblems/mw2/Pave_Low_Emblem_MW2.png"
+  },
+  {
+    "id": "Aircraft_Emblem_MW2",
+    "src": "/emblems/mw2/Aircraft_Emblem_MW2.png"
+  },
+  {
+    "id": "50_Caliber_Bullets_Emblem_MW2",
+    "src": "/emblems/mw2/50_Caliber_Bullets_Emblem_MW2.png"
+  },
+  {
+    "id": "Russian_Beret_Emblem_MW2",
+    "src": "/emblems/mw2/Russian_Beret_Emblem_MW2.png"
+  },
+  {
+    "id": "Sergeant_Emblem_MW2",
+    "src": "/emblems/mw2/Sergeant_Emblem_MW2.png"
+  },
+  {
+    "id": "Command_Sergeant_Major_Emblem_MW2",
+    "src": "/emblems/mw2/Command_Sergeant_Major_Emblem_MW2.png"
+  },
+  {
+    "id": "Colonel_Emblem_MW2",
+    "src": "/emblems/mw2/Colonel_Emblem_MW2.png"
+  },
+  {
+    "id": "Patch_Emblem_MW2",
+    "src": "/emblems/mw2/Patch_Emblem_MW2.png"
+  },
+  {
+    "id": "M1A2_Abrams_Emblem_MW2",
+    "src": "/emblems/mw2/M1A2_Abrams_Emblem_MW2.png"
+  },
+  {
+    "id": "AC-130_Angel_Flares_Emblem_MW2",
+    "src": "/emblems/mw2/AC-130_Angel_Flares_Emblem_MW2.png"
+  },
+  {
+    "id": "Bullet_Case_Emblem_MW2",
+    "src": "/emblems/mw2/Bullet_Case_Emblem_MW2.png"
+  },
+  {
+    "id": "Gas_Mask_Emblem_MW2",
+    "src": "/emblems/mw2/Gas_Mask_Emblem_MW2.png"
+  },
+  {
+    "id": "Night_Vision_1_Emblem_MW2",
+    "src": "/emblems/mw2/Night_Vision_1_Emblem_MW2.png"
+  },
+  {
+    "id": "Hat_'n'_Knife_Emblem_MW2",
+    "src": "/emblems/mw2/Hat_'n'_Knife_Emblem_MW2.png"
+  },
+  {
+    "id": "Blast_Shield_Emblem_MW2",
+    "src": "/emblems/mw2/Blast_Shield_Emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Pilot_Emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Pilot_Emblem_MW2.png"
+  },
+  {
+    "id": "Price_World_War_II_Emblem_MW2",
+    "src": "/emblems/mw2/Price_World_War_II_Emblem_MW2.png"
+  },
+  {
+    "id": "Eagle_Emblem_MW2",
+    "src": "/emblems/mw2/Eagle_Emblem_MW2.png"
+  },
+  {
+    "id": "Hipflask_Emblem_MW2",
+    "src": "/emblems/mw2/Hipflask_Emblem_MW2.png"
+  },
+  {
+    "id": "Night_Vision_2_Emblem_MW2",
+    "src": "/emblems/mw2/Night_Vision_2_Emblem_MW2.png"
+  },
+  {
+    "id": "Vest_Emblem_MW2",
+    "src": "/emblems/mw2/Vest_Emblem_MW2.png"
+  },
+  {
+    "id": "C4_Emblem_MW2",
+    "src": "/emblems/mw2/C4_Emblem_MW2.png"
+  },
+  {
+    "id": "Grigsby_Emblem_MW2",
+    "src": "/emblems/mw2/Grigsby_Emblem_MW2.png"
+  },
+  {
+    "id": "Price_Woodland_Emblem_MW2",
+    "src": "/emblems/mw2/Price_Woodland_Emblem_MW2.png"
+  },
+  {
+    "id": "Veteran_Emblem_MW2",
+    "src": "/emblems/mw2/Veteran_Emblem_MW2.png"
+  },
+  {
+    "id": "Pushin'_Daisies_Emblem_MW2",
+    "src": "/emblems/mw2/Pushin'_Daisies_Emblem_MW2.png"
+  },
+  {
+    "id": "Headshot_Emblem_MW2",
+    "src": "/emblems/mw2/Headshot_Emblem_MW2.png"
+  },
+  {
+    "id": "Sniper_Scope_Emblem_MW2",
+    "src": "/emblems/mw2/Sniper_Scope_Emblem_MW2.png"
+  },
+  {
+    "id": "Simple_Gun_Emblem_MW2",
+    "src": "/emblems/mw2/Simple_Gun_Emblem_MW2.png"
+  },
+  {
+    "id": "Claymore_Emblem_MW2",
+    "src": "/emblems/mw2/Claymore_Emblem_MW2.png"
+  },
+  {
+    "id": "Task_Force_Army_Emblem_MW2",
+    "src": "/emblems/mw2/Task_Force_Army_Emblem_MW2.png"
+  },
+  {
+    "id": "Price_Arctic_Emblem_MW2",
+    "src": "/emblems/mw2/Price_Arctic_Emblem_MW2.png"
+  },
+  {
+    "id": "Boonie_Hat_Emblem_MW2",
+    "src": "/emblems/mw2/Boonie_Hat_Emblem_MW2.png"
+  },
+  {
+    "id": "Biohazard_Emblem_MW2",
+    "src": "/emblems/mw2/Biohazard_Emblem_MW2.png"
+  },
+  {
+    "id": "Car_Emblem_MW2",
+    "src": "/emblems/mw2/Car_Emblem_MW2.png"
+  },
+  {
+    "id": "Compass_Emblem_MW2",
+    "src": "/emblems/mw2/Compass_Emblem_MW2.png"
+  },
+  {
+    "id": "Frag_Grenade_emblem_MW2",
+    "src": "/emblems/mw2/Frag_Grenade_emblem_MW2.png"
+  },
+  {
+    "id": "Throwing_Knive_emblem_MW2",
+    "src": "/emblems/mw2/Throwing_Knive_emblem_MW2.png"
+  },
+  {
+    "id": "Ghost_Bust_emblem_MW2",
+    "src": "/emblems/mw2/Ghost_Bust_emblem_MW2.png"
+  },
+  {
+    "id": "Assad_emblem_MW2",
+    "src": "/emblems/mw2/Assad_emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Ranger_emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Ranger_emblem_MW2.png"
+  },
+  {
+    "id": "Juggernaut_1_emblem_MW2",
+    "src": "/emblems/mw2/Juggernaut_1_emblem_MW2.png"
+  },
+  {
+    "id": "Gumby_emblem_MW2",
+    "src": "/emblems/mw2/Gumby_emblem_MW2.png"
+  },
+  {
+    "id": "Missile_1_emblem_MW2",
+    "src": "/emblems/mw2/Missile_1_emblem_MW2.png"
+  },
+  {
+    "id": "Semtex_emblem_MW2",
+    "src": "/emblems/mw2/Semtex_emblem_MW2.png"
+  },
+  {
+    "id": "Boots_1_Emblem_MW2",
+    "src": "/emblems/mw2/Boots_1_Emblem_MW2.png"
+  },
+  {
+    "id": "Ghillie_emblem_MW2",
+    "src": "/emblems/mw2/Ghillie_emblem_MW2.png"
+  },
+  {
+    "id": "Makarov_emblem_MW2",
+    "src": "/emblems/mw2/Makarov_emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Brit_WW2_emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Brit_WW2_emblem_MW2.png"
+  },
+  {
+    "id": "Juggernaut_2_emblem_MW2",
+    "src": "/emblems/mw2/Juggernaut_2_emblem_MW2.png"
+  },
+  {
+    "id": "Gloss_Grenade_emblem_MW2",
+    "src": "/emblems/mw2/Gloss_Grenade_emblem_MW2.png"
+  },
+  {
+    "id": "Minigun_emblem_MW2",
+    "src": "/emblems/mw2/Minigun_emblem_MW2.png"
+  },
+  {
+    "id": "Tactical_Insertion_emblem_MW2",
+    "src": "/emblems/mw2/Tactical_Insertion_emblem_MW2.png"
+  },
+  {
+    "id": "Binoculars_emblem_MW2",
+    "src": "/emblems/mw2/Binoculars_emblem_MW2.png"
+  },
+  {
+    "id": "Boots_2_Emblem_MW2",
+    "src": "/emblems/mw2/Boots_2_Emblem_MW2.png"
+  },
+  {
+    "id": "Snowmobile_emblem_MW2",
+    "src": "/emblems/mw2/Snowmobile_emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Army_emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Army_emblem_MW2.png"
+  },
+  {
+    "id": "Redhand_emblem_MW2",
+    "src": "/emblems/mw2/Redhand_emblem_MW2.png"
+  },
+  {
+    "id": "TF141_emblem_MW2",
+    "src": "/emblems/mw2/TF141_emblem_MW2.png"
+  },
+  {
+    "id": "Shuriken_emblem_MW2",
+    "src": "/emblems/mw2/Shuriken_emblem_MW2.png"
+  },
+  {
+    "id": "Radiation_emblem_MW2",
+    "src": "/emblems/mw2/Radiation_emblem_MW2.png"
+  },
+  {
+    "id": "Pirateflag_emblem_MW2",
+    "src": "/emblems/mw2/Pirateflag_emblem_MW2.png"
+  },
+  {
+    "id": "Honeybadger_emblem_MW2",
+    "src": "/emblems/mw2/Honeybadger_emblem_MW2.png"
+  },
+  {
+    "id": "Boot_Emblem_MW2",
+    "src": "/emblems/mw2/Boot_Emblem_MW2.png"
+  },
+  {
+    "id": "Tic_Tac_Boom_emblem_MW2",
+    "src": "/emblems/mw2/Tic_Tac_Boom_emblem_MW2.png"
+  },
+  {
+    "id": "Comic_Shepherd_emblem_MW2",
+    "src": "/emblems/mw2/Comic_Shepherd_emblem_MW2.png"
+  },
+  {
+    "id": "Umbra_Catervae_emblem_MW2",
+    "src": "/emblems/mw2/Umbra_Catervae_emblem_MW2.png"
+  },
+  {
+    "id": "Skull_emblem_MW2",
+    "src": "/emblems/mw2/Skull_emblem_MW2.png"
+  },
+  {
+    "id": "Tsunami_emblem_MW2",
+    "src": "/emblems/mw2/Tsunami_emblem_MW2.png"
+  },
+  {
+    "id": "Moon_emblem_MW2",
+    "src": "/emblems/mw2/Moon_emblem_MW2.png"
+  },
+  {
+    "id": "Kinggorilla_emblem_MW2",
+    "src": "/emblems/mw2/Kinggorilla_emblem_MW2.png"
+  },
+  {
+    "id": "Devil_finger_emblem_MW2",
+    "src": "/emblems/mw2/Devil_finger_emblem_MW2.png"
+  },
+  {
+    "id": "Joystick_emblem_MW2",
+    "src": "/emblems/mw2/Joystick_emblem_MW2.png"
+  },
+  {
+    "id": "Comic_Price_emblem_MW2",
+    "src": "/emblems/mw2/Comic_Price_emblem_MW2.png"
+  },
+  {
+    "id": "Infinity_Ward_emblem_MW2",
+    "src": "/emblems/mw2/Infinity_Ward_emblem_MW2.png"
+  },
+  {
+    "id": "Xray_emblem_MW2",
+    "src": "/emblems/mw2/Xray_emblem_MW2.png"
+  },
+  {
+    "id": "Seasnipers_emblem_MW2",
+    "src": "/emblems/mw2/Seasnipers_emblem_MW2.png"
+  },
+  {
+    "id": "Mexican_Blue_emblem_MW2",
+    "src": "/emblems/mw2/Mexican_Blue_emblem_MW2.png"
+  },
+  {
+    "id": "The_Cow_emblem_MW2",
+    "src": "/emblems/mw2/The_Cow_emblem_MW2.png"
+  },
+  {
+    "id": "Brass_knuckles_Emblem_MW2",
+    "src": "/emblems/mw2/Brass_knuckles_Emblem_MW2.png"
+  },
+  {
+    "id": "Red_Devil_emblem_MW2",
+    "src": "/emblems/mw2/Red_Devil_emblem_MW2.png"
+  },
+  {
+    "id": "Toon_Price_emblem_MW2",
+    "src": "/emblems/mw2/Toon_Price_emblem_MW2.png"
+  },
+  {
+    "id": "Porter_Justice_emblem_MW2",
+    "src": "/emblems/mw2/Porter_Justice_emblem_MW2.png"
+  },
+  {
+    "id": "Skull_Black_emblem_MW2",
+    "src": "/emblems/mw2/Skull_Black_emblem_MW2.png"
+  },
+  {
+    "id": "Soap_Bar_emblem_MW2",
+    "src": "/emblems/mw2/Soap_Bar_emblem_MW2.png"
+  },
+  {
+    "id": "Mexican_Red_emblem_MW2",
+    "src": "/emblems/mw2/Mexican_Red_emblem_MW2.png"
+  },
+  {
+    "id": "War_Pig_emblem_MW2",
+    "src": "/emblems/mw2/War_Pig_emblem_MW2.png"
+  },
+  {
+    "id": "8_Ball_emblem_MW2",
+    "src": "/emblems/mw2/8_Ball_emblem_MW2.png"
+  },
+  {
+    "id": "The_Bomb_emblem_MW2",
+    "src": "/emblems/mw2/The_Bomb_emblem_MW2.png"
+  },
+  {
+    "id": "8-bit_Price_Emblem_MW2",
+    "src": "/emblems/mw2/8-bit_Price_Emblem_MW2.png"
+  },
+  {
+    "id": "Throwing_Knife_Soda_emblem_MW2",
+    "src": "/emblems/mw2/Throwing_Knife_Soda_emblem_MW2.png"
+  },
+  {
+    "id": "Snake_Eyes_emblem_MW2",
+    "src": "/emblems/mw2/Snake_Eyes_emblem_MW2.png"
+  },
+  {
+    "id": "Gold_emblem_MW2",
+    "src": "/emblems/mw2/Gold_emblem_MW2.png"
+  },
+  {
+    "id": "Helmet_Samurai_emblem_MW2",
+    "src": "/emblems/mw2/Helmet_Samurai_emblem_MW2.png"
+  },
+  {
+    "id": "Bird_brain_Emblem_MW2",
+    "src": "/emblems/mw2/Bird_brain_Emblem_MW2.png"
+  },
+  {
+    "id": "Weed_emblem_MW2",
+    "src": "/emblems/mw2/Weed_emblem_MW2.png"
+  },
+  {
+    "id": "Skull_Award_emblem_MW2",
+    "src": "/emblems/mw2/Skull_Award_emblem_MW2.png"
+  },
+  {
+    "id": "Redhead_emblem_MW2",
+    "src": "/emblems/mw2/Redhead_emblem_MW2.png"
+  },
+  {
+    "id": "Humantrophy_emblem_MW2",
+    "src": "/emblems/mw2/Humantrophy_emblem_MW2.png"
+  },
+  {
+    "id": "Motorcycle_emblem_MW2",
+    "src": "/emblems/mw2/Motorcycle_emblem_MW2.png"
+  },
+  {
+    "id": "Pirate_emblem_MW2",
+    "src": "/emblems/mw2/Pirate_emblem_MW2.png"
+  },
+  {
+    "id": "Tiger_emblem_MW2",
+    "src": "/emblems/mw2/Tiger_emblem_MW2.png"
+  },
+  {
+    "id": "Claw_Emblem_MW2",
+    "src": "/emblems/mw2/Claw_Emblem_MW2.png"
+  },
+  {
+    "id": "Award_jets_emblem_MW2",
+    "src": "/emblems/mw2/Award_jets_emblem_MW2.png"
+  },
+  {
+    "id": "Chicken_Emblem_MW2",
+    "src": "/emblems/mw2/Chicken_Emblem_MW2.png"
+  },
+  {
+    "id": "Pacifier_Blue_emblem_MW2",
+    "src": "/emblems/mw2/Pacifier_Blue_emblem_MW2.png"
+  },
+  {
+    "id": "Pacifier_Pink_emblem_MW2",
+    "src": "/emblems/mw2/Pacifier_Pink_emblem_MW2.png"
+  },
+  {
+    "id": "Treasure_Chest_emblem_MW2",
+    "src": "/emblems/mw2/Treasure_Chest_emblem_MW2.png"
+  },
+  {
+    "id": "Bear_emblem_MW2",
+    "src": "/emblems/mw2/Bear_emblem_MW2.png"
+  },
+  {
+    "id": "Tire_emblem_MW2",
+    "src": "/emblems/mw2/Tire_emblem_MW2.png"
+  },
+  {
+    "id": "Painkiller_emblem_MW2",
+    "src": "/emblems/mw2/Painkiller_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_04_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_04_emblem_MW2.png"
+  },
+  {
+    "id": "Call_of_Duty_4_emblem_MW2",
+    "src": "/emblems/mw2/Call_of_Duty_4_emblem_MW2.png"
+  },
+  {
+    "id": "Treasure_Map_emblem_MW2",
+    "src": "/emblems/mw2/Treasure_Map_emblem_MW2.png"
+  },
+  {
+    "id": "Hyena_emblem_MW2",
+    "src": "/emblems/mw2/Hyena_emblem_MW2.png"
+  },
+  {
+    "id": "Loadedfinger_emblem_MW2",
+    "src": "/emblems/mw2/Loadedfinger_emblem_MW2.png"
+  },
+  {
+    "id": "Martyrdom_emblem_MW2",
+    "src": "/emblems/mw2/Martyrdom_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_05_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_05_emblem_MW2.png"
+  },
+  {
+    "id": "Gears_emblem_MW2",
+    "src": "/emblems/mw2/Gears_emblem_MW2.png"
+  },
+  {
+    "id": "Sugarglider_emblem_MW2",
+    "src": "/emblems/mw2/Sugarglider_emblem_MW2.png"
+  },
+  {
+    "id": "Girlskull_emblem_MW2",
+    "src": "/emblems/mw2/Girlskull_emblem_MW2.png"
+  },
+  {
+    "id": "Final_Stand_emblem_MW2",
+    "src": "/emblems/mw2/Final_Stand_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_06_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_06_emblem_MW2.png"
+  },
+  {
+    "id": "Riot_Shield_emblem_MW2",
+    "src": "/emblems/mw2/Riot_Shield_emblem_MW2.png"
+  },
+  {
+    "id": "Ghost_Mic_emblem_MW2",
+    "src": "/emblems/mw2/Ghost_Mic_emblem_MW2.png"
+  },
+  {
+    "id": "Stop_emblem_MW2",
+    "src": "/emblems/mw2/Stop_emblem_MW2.png"
+  },
+  {
+    "id": "Abduction_emblem_MW2",
+    "src": "/emblems/mw2/Abduction_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_01_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_01_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_07_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_07_emblem_MW2.png"
+  },
+  {
+    "id": "ISS_emblem_MW2",
+    "src": "/emblems/mw2/ISS_emblem_MW2.png"
+  },
+  {
+    "id": "League_Grenade_emblem_MW2",
+    "src": "/emblems/mw2/League_Grenade_emblem_MW2.png"
+  },
+  {
+    "id": "Burger_Town_Emblem_MW2",
+    "src": "/emblems/mw2/Burger_Town_Emblem_MW2.png"
+  },
+  {
+    "id": "Illuminati_emblem_MW2",
+    "src": "/emblems/mw2/Illuminati_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_02_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_02_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_08_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_08_emblem_MW2.png"
+  },
+  {
+    "id": "Ghost_emblem_MW2",
+    "src": "/emblems/mw2/Ghost_emblem_MW2.png"
+  },
+  {
+    "id": "Rhino_emblem_MW2",
+    "src": "/emblems/mw2/Rhino_emblem_MW2.png"
+  },
+  {
+    "id": "Bulb_Emblem_MW2",
+    "src": "/emblems/mw2/Bulb_Emblem_MW2.png"
+  },
+  {
+    "id": "Copycat_emblem_MW2",
+    "src": "/emblems/mw2/Copycat_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_03_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_03_emblem_MW2.png"
+  },
+  {
+    "id": "CoD4_Prestige_09_emblem_MW2",
+    "src": "/emblems/mw2/CoD4_Prestige_09_emblem_MW2.png"
+  },
+  {
+    "id": "M4A1_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M4A1_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Vector_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Vector_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "AK-47_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/AK-47_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "SCAR-H_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/SCAR-H_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "UMP45_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/UMP45_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "ACR_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/ACR_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "FAL_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/FAL_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "P90_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/P90_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M16A4_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M16A4_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "FAMAS_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/FAMAS_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "AUG_HBAR_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/AUG_HBAR_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "TAR-21_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/TAR-21_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "MP5K_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/MP5K_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M240_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M240_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "F2000_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/F2000_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Mini-Uzi_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Mini-Uzi_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "L86_LSW_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/L86_LSW_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "RPD_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/RPD_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "G18_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/G18_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Desert_Eagle_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Desert_Eagle_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Model_1887_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Model_1887_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "F2000_Expert_emblem_MW2",
+    "src": "/emblems/mw2/F2000_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Mini-Uzi_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Mini-Uzi_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "L86_LSW_Expert_emblem_MW2",
+    "src": "/emblems/mw2/L86_LSW_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "WA2000_Expert_emblem_MW2",
+    "src": "/emblems/mw2/WA2000_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "MG4_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/MG4_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M93_Raffica_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M93_Raffica_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "44_Magnum_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/44_Magnum_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Ranger_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Ranger_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M4A1_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M4A1_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Vector_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Vector_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "RPD_Expert_emblem_MW2",
+    "src": "/emblems/mw2/RPD_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "G18_Expert_emblem_MW2",
+    "src": "/emblems/mw2/G18_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Intervention_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Intervention_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "TMP_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/TMP_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M1014_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M1014_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "AK-47_Expert_emblem_MW2",
+    "src": "/emblems/mw2/AK-47_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "SCAR-H_Expert_emblem_MW2",
+    "src": "/emblems/mw2/SCAR-H_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "UMP45_Expert_emblem_MW2",
+    "src": "/emblems/mw2/UMP45_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "MG4_Expert_emblem_MW2",
+    "src": "/emblems/mw2/MG4_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "TMP_Expert_emblem_MW2",
+    "src": "/emblems/mw2/TMP_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Barrett_50cal_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Barrett_50cal_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "PP2000_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/PP2000_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "Striker_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/Striker_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "ACR_Expert_emblem_MW2",
+    "src": "/emblems/mw2/ACR_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "FAL_Expert_emblem_MW2",
+    "src": "/emblems/mw2/FAL_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "P90_Expert_emblem_MW2",
+    "src": "/emblems/mw2/P90_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Intervention_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Intervention_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M93_Raffica_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M93_Raffica_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M21_EBR_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M21_EBR_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M9_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/M9_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "AA-12_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/AA-12_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "M16A4_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M16A4_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "FAMAS_Expert_emblem_MW2",
+    "src": "/emblems/mw2/FAMAS_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "AUG_HBAR_Expert_emblem_MW2",
+    "src": "/emblems/mw2/AUG_HBAR_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Barrett_50cal_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Barrett_50cal_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "PP2000_Expert_emblem_MW2",
+    "src": "/emblems/mw2/PP2000_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "WA2000_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/WA2000_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "USP_45_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/USP_45_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "SPAS-12_Marksman_emblem_MW2",
+    "src": "/emblems/mw2/SPAS-12_Marksman_emblem_MW2.png"
+  },
+  {
+    "id": "TAR-21_Expert_emblem_MW2",
+    "src": "/emblems/mw2/TAR-21_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "MP5K_Expert_emblem_MW2",
+    "src": "/emblems/mw2/MP5K_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M240_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M240_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M21_EBR_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M21_EBR_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M1014_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M1014_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Striker_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Striker_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "USP_45_Expert_emblem_MW2",
+    "src": "/emblems/mw2/USP_45_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "AA-12_Expert_emblem_MW2",
+    "src": "/emblems/mw2/AA-12_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Desert_Eagle_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Desert_Eagle_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "SPAS-12_Expert_emblem_MW2",
+    "src": "/emblems/mw2/SPAS-12_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "44_Magnum_Expert_emblem_MW2",
+    "src": "/emblems/mw2/44_Magnum_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Model_1887_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Model_1887_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "Ranger_Expert_emblem_MW2",
+    "src": "/emblems/mw2/Ranger_Expert_emblem_MW2.png"
+  },
+  {
+    "id": "M9_Expert_emblem_MW2",
+    "src": "/emblems/mw2/M9_Expert_emblem_MW2.png"
+  }
+]

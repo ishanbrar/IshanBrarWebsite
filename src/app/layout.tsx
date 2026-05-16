@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans, Noto_Sans_Gurmukhi } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans, Noto_Sans_Gurmukhi, Oswald } from "next/font/google";
 import "./globals.css";
 import { siteUrl } from "@/lib/site";
 
@@ -20,6 +20,13 @@ const gurmukhi = Noto_Sans_Gurmukhi({
   variable: "--font-gurmukhi",
 });
 
+/** Bold condensed sans — classic ESPN Bottom Line feel */
+const espn = Oswald({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-espn",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Ishan Singh Brar",
@@ -37,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sans.variable} ${serif.variable} ${gurmukhi.variable} h-full antialiased`}
+      className={`${sans.variable} ${serif.variable} ${gurmukhi.variable} ${espn.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans text-[#3a2f28]">
         <div className="flex-1">{children}</div>

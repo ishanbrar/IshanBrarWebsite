@@ -22,7 +22,7 @@ export function GiftField() {
   return (
     <>
       <section
-        className="flex min-h-[calc(100vh-3.5rem)] w-full items-center justify-center overflow-hidden px-4 py-4"
+        className="flex min-h-[calc(100vh-3.5rem)] w-full items-center justify-center overflow-hidden px-4 pb-12 pt-4"
         aria-label="Projects"
       >
         <div className="relative aspect-square w-[min(88vw,22rem)] max-w-full sm:w-[min(78vw,24rem)]">

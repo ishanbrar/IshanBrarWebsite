@@ -1,4 +1,5 @@
 import { GiftField } from "@/components/GiftField";
+import { QuoteTicker } from "@/components/QuoteTicker";
 import { VantaFog } from "@/components/VantaFog";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="relative">
       <VantaFog />
       <GiftField />
+      <QuoteTicker />
     </main>
   );
 }
