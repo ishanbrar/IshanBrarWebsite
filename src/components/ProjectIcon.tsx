@@ -118,6 +118,14 @@ export function ProjectIcon({ icon, className = "h-7 w-7", style }: ProjectIconP
           <path d="M8 11h.01M12 11h.01M16 11h.01" strokeWidth={2.5} />
         </svg>
       );
+    case "wiki":
+      return (
+        <svg {...props}>
+          <path d="M6 5h12v14H6z" />
+          <path d="M9 9h6M9 12h6M9 15h4" />
+          <path d="M12 5v14" strokeWidth={1.25} />
+        </svg>
+      );
     default:
       return null;
   }
