@@ -43,11 +43,12 @@ export function websiteJsonLd() {
   };
 }
 
-const ogImagePath = "/me/headshot.png";
+/** Favicon + Open Graph / share preview (animated GIF). */
+export const brandImagePath = "/icons/user.gif";
 
 export function buildSiteMetadata(overrides?: Metadata): Metadata {
   const verification = process.env.GOOGLE_SITE_VERIFICATION;
-  const ogImage = `${siteUrl}${ogImagePath}`;
+  const ogImage = `${siteUrl}${brandImagePath}`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -68,6 +69,10 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
     creator: personName,
     robots: { index: true, follow: true },
     alternates: { canonical: siteUrl },
+    icons: {
+      icon: [{ url: brandImagePath, type: "image/gif" }],
+      shortcut: [brandImagePath],
+    },
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -75,7 +80,7 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
       siteName: personName,
       title: siteTitle,
       description: siteDescription,
-      images: [{ url: ogImage, width: 1200, height: 1200, alt: personName }],
+      images: [{ url: ogImage, type: "image/gif", alt: personName }],
     },
     twitter: {
       card: "summary_large_image",
