@@ -175,6 +175,10 @@ export const gifts: Gift[] = [
       "Questions, scores, and round timing are synchronized through Postgres-backed realtime updates instead of local-only timers.",
       "Fairness checks and latency simulations sit behind the game logic so the match loop stays trustworthy.",
     ],
+    screenshot: {
+      src: "/gift-shots/trivia.png",
+      alt: "Trivia Duel app artwork",
+    },
   },
   {
     id: "cornerapp",
@@ -192,6 +196,10 @@ export const gifts: Gift[] = [
       "Firebase stores users, reactions, and content so social actions update across the app quickly.",
       "Swipe interactions sit on top of a more structured engagement model than the UI suggests at first glance.",
     ],
+    screenshot: {
+      src: "/gift-shots/cornerapp.png",
+      alt: "Corner app iPhone screenshot",
+    },
   },
   {
     id: "pga",
