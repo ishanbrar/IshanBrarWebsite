@@ -7,7 +7,9 @@ import { siteDescription, siteTitle } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: siteTitle,
+  title: {
+    absolute: siteTitle,
+  },
   description: siteDescription,
   alternates: { canonical: siteUrl },
   openGraph: {

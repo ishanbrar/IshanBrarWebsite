@@ -5,10 +5,10 @@ import { personName, personShortName } from "@/lib/seo";
 export function HomeSeoContent() {
   return (
     <section className="sr-only" aria-label="About this site">
-      <h1>{personName}</h1>
+      <h1>Ishan Brar: A Portfolio</h1>
       <p>
-        Congratulations, you are now breathing manually. Portfolio of projects by{" "}
-        {personShortName} — LegaTree, WikiMe, EthnoMapper, Punjabi Tutor, and more.{" "}
+        Congratulations, you are now breathing manually. This is the portfolio website of{" "}
+        {personName}, also known as {personShortName}.{" "}
         <Link href="/me">About {personShortName}</Link>
       </p>
     </section>
