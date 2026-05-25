@@ -64,6 +64,19 @@ export default function MePage() {
           point out: this is only the work that the clanker&apos;s dumb policies ALLOWED me to
           create. There is much better stuff in the pipeline!
         </p>
+
+        <p>
+          If you really need to know more about me, you can find my WikiMe article{" "}
+          <a
+            href="https://wikime.online/ishanbrar"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-4 hover:text-[#2a211c]"
+          >
+            here
+          </a>
+          .
+        </p>
       </div>
     </main>
   );
