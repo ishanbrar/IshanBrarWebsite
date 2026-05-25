@@ -15,6 +15,14 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
   const visitHref =
     gift?.link.type === "site" || gift?.link.type === "github" ? gift.link.url : null;
   const [showTechnical, setShowTechnical] = useState(false);
+  const screenshotLayout = gift?.screenshot?.layout ?? "landscape";
+  const screenshotFit = gift?.screenshot?.fit ?? "cover";
+  const screenshotFrameClass =
+    screenshotLayout === "portrait"
+      ? "mx-auto aspect-[10/16] max-w-[22rem]"
+      : screenshotLayout === "square"
+        ? "mx-auto aspect-square max-w-[20rem]"
+        : "aspect-[16/9] w-full";
 
   useEffect(() => {
     setShowTechnical(false);
@@ -75,14 +83,20 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
                     className="group block"
                     aria-label={`Open ${gift.title}`}
                   >
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-transform duration-200 group-hover:scale-[1.01]">
+                    <div
+                      className={`relative overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-transform duration-200 group-hover:scale-[1.01] ${screenshotFrameClass}`}
+                    >
                       {gift.screenshot ? (
                         <>
                           <Image
                             src={gift.screenshot.src}
                             alt={gift.screenshot.alt}
                             fill
-                            className="object-cover object-top"
+                            className={
+                              screenshotFit === "contain"
+                                ? "object-contain p-3"
+                                : "object-cover object-top"
+                            }
                             sizes="(max-width: 768px) 90vw, 720px"
                           />
                           <div className="absolute inset-0 bg-black/0 transition-colors duration-200 group-hover:bg-black/10" />
@@ -95,13 +109,17 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
                     </div>
                   </a>
                 ) : (
-                  <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)]">
+                  <div
+                    className={`relative overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)] ${screenshotFrameClass}`}
+                  >
                     {gift.screenshot ? (
                       <Image
                         src={gift.screenshot.src}
                         alt={gift.screenshot.alt}
                         fill
-                        className="object-cover object-top"
+                        className={
+                          screenshotFit === "contain" ? "object-contain p-3" : "object-cover object-top"
+                        }
                         sizes="(max-width: 768px) 90vw, 720px"
                       />
                     ) : (

@@ -53,6 +53,8 @@ export type Gift = {
   screenshot?: {
     src: string;
     alt: string;
+    fit?: "cover" | "contain";
+    layout?: "landscape" | "portrait" | "square";
   };
 };
 
@@ -77,6 +79,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/legatree.png",
       alt: "LegaTree landing page",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -98,6 +102,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/wikime.png",
       alt: "WikiMe homepage",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -136,6 +142,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/ethnic-mapper.png",
       alt: "EthnoMapper map view",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -157,6 +165,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/mymini.png",
       alt: "MyMini login page",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -178,6 +188,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/trivia.png",
       alt: "Trivia Duel app artwork",
+      fit: "contain",
+      layout: "square",
     },
   },
   {
@@ -199,6 +211,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/cornerapp.png",
       alt: "Corner app iPhone screenshot",
+      fit: "contain",
+      layout: "portrait",
     },
   },
   {
@@ -208,7 +222,7 @@ export const gifts: Gift[] = [
     color: "#386641",
     iconColor: "#eaf4e9",
     icon: "golf",
-    link: { type: "site", url: "https://pga-alpha.vercel.app" },
+    link: { type: "site", url: "https://dfwpunjabigolf.com" },
     summary:
       "A client site for the DFW Punjabi Golf Club with polished community pages, schedules, galleries, and future admin hooks.",
     stack: ["react", "typescript", "framer", "vercel"],
@@ -220,6 +234,8 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/pga.png",
       alt: "DFW Punjabi Golf Club homepage",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -229,7 +245,7 @@ export const gifts: Gift[] = [
     color: "#9a6b1a",
     iconColor: "#fff9e8",
     icon: "gurdwara",
-    link: { type: "site", url: "https://gss-of-nt.vercel.app" },
+    link: { type: "site", url: "https://gssofnt.com" },
     summary:
       "A calm gurdwara website that makes prayer times, announcements, location details, and community information easy to find.",
     stack: ["astro", "tailwindcss", "vercel"],
@@ -241,27 +257,31 @@ export const gifts: Gift[] = [
     screenshot: {
       src: "/gift-shots/gssofnt.png",
       alt: "Gurdwara Singh Sabha homepage",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
     id: "dfwss2",
-    title: "Astro Citrus Blog (DFWSS2)",
+    title: "DFW Sikh Shooters Website",
     size: 0.68,
     color: "#5c4d7a",
     iconColor: "#f0ecf7",
     icon: "code",
-    link: { type: "site", url: "https://astrocitrus.netlify.app" },
+    link: { type: "site", url: "https://dfwsikhs.com" },
     summary:
-      "A redesigned Astro Citrus demo focused on typography, article layout, docs, and responsive reading.",
-    stack: ["astro", "tailwindcss", "netlify"],
+      "A Sikh shooters club website that explains the mission, values, and contact details of the DFW-based community.",
+    stack: ["astro", "tailwindcss"],
     technical: [
-      "This fork keeps Astro Citrus's content pipeline but reworks the theme layers, typography, and layout pacing.",
-      "Tailwind utilities handle most of the visual system so docs, blog, and landing pages stay consistent.",
-      "The deployed Netlify build acts as a live proof that the customized theme still behaves like a coherent reading product.",
+      "The site is built as a lightweight Astro front end so the pages load quickly and stay easy to maintain.",
+      "Tailwind handles the visual system, which keeps the typography, spacing, and navigation consistent across the small set of informational pages.",
+      "The content is structured more like a focused community landing site than a generic template, with Sikh framing and local club context at the center.",
     ],
     screenshot: {
       src: "/gift-shots/dfwss2.png",
-      alt: "Astro Citrus homepage",
+      alt: "DFW Sikh Shooters homepage",
+      fit: "cover",
+      layout: "landscape",
     },
   },
   {
@@ -280,6 +300,12 @@ export const gifts: Gift[] = [
       "Lesson prompts and session history are stored so the bot can continue a teaching thread instead of replying statelessly.",
       "The teaching loop is built around Telegram messaging first, with automation and voice layered on top.",
     ],
+    screenshot: {
+      src: "/gift-shots/punjabi-bot.png",
+      alt: "Punjabi tutor Telegram bot screenshot",
+      fit: "contain",
+      layout: "portrait",
+    },
   },
   {
     id: "bot-jarjar",
@@ -297,5 +323,11 @@ export const gifts: Gift[] = [
       "Scheduled jobs post quotes and weather updates using the same bot infrastructure that handles direct chat.",
       "Home-server scripts keep the bot environment restartable and easier to recover if anything breaks.",
     ],
+    screenshot: {
+      src: "/gift-shots/colonel-binks.png",
+      alt: "Colonel Binks Telegram bot screenshot",
+      fit: "contain",
+      layout: "portrait",
+    },
   },
 ];

@@ -375,70 +375,68 @@ export const featuredProjects: Project[] = [
   },
   {
     slug: "dfwss2",
-    title: "Astro Content Site",
-    subtitle: "An Astro-based content site rebuild focused on typography, layout, and responsive structure.",
-    productionDate: "2025",
-    status: "Prototype",
+    title: "DFW Sikh Shooters Website",
+    subtitle:
+      "A focused community website for a Sikh shooters group in DFW, built around clarity, values, and a lightweight content structure.",
+    productionDate: "2026",
+    status: "Live",
     category: "Web App",
     tags: ["Web", "Astro"],
-    links: [github("https://github.com/ishanbrar/DFWSS2"), demo("https://astrocitrus.netlify.app")],
+    links: [github("https://github.com/ishanbrar/DFWSS2"), demo("https://dfwsikhs.com")],
     purpose:
-      "Turn a content site template into something that feels cleaner, sharper, and more intentionally designed.",
+      "Give the DFW Sikh shooters community a website that explains the mission, symbolism, and contact path in a calm, credible way.",
     features: [
-      "Content-first layout with clean typography",
-      "Responsive light/dark styling patterns",
-      "Template structure for posts/pages and reusable components",
-      "Deployed demo for quick review",
+      "Mission-driven landing page with Sikh framing and community context",
+      "Simple informational navigation for about, why, how, and contact pages",
+      "Responsive typography and lightweight page structure",
+      "Custom domain deployment for a real-world community audience",
     ],
-    role: "Fork/customization",
+    role: "Solo build / customization",
     stack: ["Astro", "Tailwind", "Static site"],
     caseStudy: {
       problem:
-        "A lot of content sites look good in a screenshot but lose their polish once real pages and navigation are involved.",
+        "Community sites can feel either too generic or too cluttered, especially when they need to communicate identity and purpose quickly.",
       whyBuilt:
-        "I used this project to learn how to make a template feel more authored and less off-the-shelf.",
+        "I wanted the site to feel respectful, intentional, and easy to understand for both Sikhs and people encountering the group for the first time.",
       architecture: [
         {
-          title: "Astro content structure",
+          title: "Astro static site shell",
           detail:
-            "Pages and reusable components are organized around editorial readability and straightforward authoring.",
+            "Astro keeps the site fast and simple, which is a good fit for a small informational website with a few core pages.",
         },
         {
-          title: "Responsive visual system",
+          title: "Tailwind-driven visual system",
           detail:
-            "Typography and spacing are tuned so the same layout language holds up on both compact and wide screens.",
+            "Typography, spacing, and card treatments are handled with a lightweight utility system so the site stays consistent without overengineering.",
         },
         {
-          title: "Deployable static shell",
+          title: "Community-first page structure",
           detail:
-            "The project stays lightweight and easy to ship while still feeling custom.",
+            "The navigation and sections are organized around why the group exists, what it stands for, and how to reach it.",
         },
       ],
       interestingDecision: {
-        title: "Use customization as a design exercise, not just a code fork",
+        title: "Treat the site like a community front door, not a theme demo",
         summary:
-          "The goal was not to copy a template perfectly, but to understand how small design choices change the feel of a site.",
+          "The work mattered more once I stopped thinking about it as a template exercise and started designing it as a real introduction to the club.",
         bullets: [
-          "That made typography and spacing worth revisiting again and again.",
-          "It also clarified which parts of a content site really matter to people using it.",
-          "The result feels more considered than a one-off recreation.",
+          "That shifted the emphasis toward clarity, symbolism, and tone instead of decorative filler.",
+          "It also made the simple page set feel more purposeful.",
+          "The result is closer to a real client-facing site than a theme sandbox.",
         ],
       },
       lessons: [
-        "Templates become interesting when you are willing to break their defaults.",
-        "Content hierarchy is usually more important than decorative flourish.",
-        "Static sites can still feel premium if the fundamentals are intentional.",
+        "Small community sites benefit most from restraint and legibility.",
+        "Symbolic and cultural framing should be built into the structure, not bolted on as decoration.",
+        "A lightweight static stack is often enough when the content and design choices are clear.",
       ],
       outcomes: [
-        "Produced a polished Astro customization and a live demo for review.",
-        "Strengthened responsive typography and layout instincts for later site work.",
+        "Shipped a live custom-domain site for the DFW Sikh shooters community.",
+        "Turned what began as a theme customization into a clearer, more purpose-built community website.",
       ],
     },
     screenshots: [
-      shot("/projects/dfwss2/01.png", "DFWSS2 screenshot 1"),
-      shot("/projects/dfwss2/02.png", "DFWSS2 screenshot 2"),
-      shot("/projects/dfwss2/03.png", "DFWSS2 screenshot 3"),
-      shot("/projects/dfwss2/04.png", "DFWSS2 screenshot 4"),
+      shot("/gift-shots/dfwss2.png", "DFW Sikh Shooters homepage", "cover", "Mission-first landing page for the DFW Sikh Shooters site."),
     ],
   },
   {
@@ -449,7 +447,7 @@ export const featuredProjects: Project[] = [
     status: "Live",
     category: "Web App",
     tags: ["Web", "Astro", "Vercel"],
-    links: [github("https://github.com/ishanbrar/GSSofNT"), demo("https://gss-of-nt.vercel.app")],
+    links: [github("https://github.com/ishanbrar/GSSofNT"), demo("https://gssofnt.com")],
     purpose:
       "Create a public-facing website that feels welcoming, well organized, and easy to browse.",
     features: [
@@ -585,7 +583,7 @@ export const featuredProjects: Project[] = [
     status: "Live",
     category: "Web App",
     tags: ["Web", "TypeScript", "React", "FramerMotion", "Vercel"],
-    links: [github("https://github.com/ishanbrar/PGA"), demo("https://pga-alpha.vercel.app")],
+    links: [github("https://github.com/ishanbrar/PGA"), demo("https://dfwpunjabigolf.com")],
     purpose:
       "Give the club a website that feels premium, modern, and easy for people to navigate.",
     features: [
