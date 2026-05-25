@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import type { Gift, GiftLink } from "@/data/gifts";
+import type { Gift } from "@/data/gifts";
 import { StackIcons } from "@/components/StackIcons";
 
 type ProjectLetterProps = {
@@ -10,16 +11,14 @@ type ProjectLetterProps = {
   onClose: () => void;
 };
 
-function visitLabel(link: GiftLink) {
-  if (link.type === "github") return "View on GitHub";
-  if (link.type === "site") return link.label ?? "Visit site";
-  return null;
-}
-
 export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
   const visitHref =
     gift?.link.type === "site" || gift?.link.type === "github" ? gift.link.url : null;
-  const visitText = gift ? visitLabel(gift.link) : null;
+  const [showTechnical, setShowTechnical] = useState(false);
+
+  useEffect(() => {
+    setShowTechnical(false);
+  }, [gift?.id]);
 
   return (
     <AnimatePresence>
@@ -68,21 +67,50 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.28 }}
               >
-                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)]">
-                  {gift.screenshot ? (
-                    <Image
-                      src={gift.screenshot.src}
-                      alt={gift.screenshot.alt}
-                      fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 768px) 90vw, 720px"
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center px-6 text-center text-sm text-[#9a8475]">
-                      Screenshot coming soon.
+                {visitHref ? (
+                  <a
+                    href={visitHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group block"
+                    aria-label={`Open ${gift.title}`}
+                  >
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-transform duration-200 group-hover:scale-[1.01]">
+                      {gift.screenshot ? (
+                        <>
+                          <Image
+                            src={gift.screenshot.src}
+                            alt={gift.screenshot.alt}
+                            fill
+                            className="object-cover object-top"
+                            sizes="(max-width: 768px) 90vw, 720px"
+                          />
+                          <div className="absolute inset-0 bg-black/0 transition-colors duration-200 group-hover:bg-black/10" />
+                        </>
+                      ) : (
+                        <div className="flex h-full items-center justify-center px-6 text-center text-sm text-[#9a8475]">
+                          Open project. Screenshot coming soon.
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
+                  </a>
+                ) : (
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10 bg-white/70 shadow-[0_12px_28px_rgba(0,0,0,0.08)]">
+                    {gift.screenshot ? (
+                      <Image
+                        src={gift.screenshot.src}
+                        alt={gift.screenshot.alt}
+                        fill
+                        className="object-cover object-top"
+                        sizes="(max-width: 768px) 90vw, 720px"
+                      />
+                    ) : (
+                      <div className="flex h-full items-center justify-center px-6 text-center text-sm text-[#9a8475]">
+                        Screenshot coming soon.
+                      </div>
+                    )}
+                  </div>
+                )}
               </motion.div>
               <motion.div
                 className="mt-5"
@@ -93,23 +121,37 @@ export function ProjectLetter({ gift, onClose }: ProjectLetterProps) {
                 <StackIcons tech={gift.stack} />
               </motion.div>
               <motion.div
-                className="mt-7 flex flex-col items-center gap-3"
+                className="mt-5 flex flex-col items-center gap-3"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
               >
-                {visitHref && visitText ? (
-                  <a
-                    href={visitHref}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-full border border-[#d91414]/30 bg-[#d91414] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#b81010]"
-                  >
-                    {visitText}
-                  </a>
-                ) : (
-                  <p className="text-sm text-[#9a8475]">Link coming soon</p>
-                )}
+                <button
+                  type="button"
+                  onClick={() => setShowTechnical((value) => !value)}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-[#6b5d52] transition hover:text-[#2a211c]"
+                  aria-expanded={showTechnical}
+                >
+                  See more
+                  <motion.span animate={{ rotate: showTechnical ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                    ↓
+                  </motion.span>
+                </button>
+                <AnimatePresence initial={false}>
+                  {showTechnical ? (
+                    <motion.div
+                      className="w-full overflow-hidden rounded-2xl border border-black/8 bg-white/55 px-5 py-4"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.22, ease: "easeOut" }}
+                    >
+                      <p className="text-sm leading-7 text-[#4a3f38]">
+                        {gift.technical.join(" ")}
+                      </p>
+                    </motion.div>
+                  ) : null}
+                </AnimatePresence>
                 <button
                   type="button"
                   onClick={onClose}

@@ -56,7 +56,7 @@ export function StackIcons({ tech }: StackIconsProps) {
         const icon = techIcons[id];
 
         return (
-          <li key={id}>
+          <li key={id} className="group relative">
             <span
               className="flex h-10 w-10 items-center justify-center rounded-xl border border-black/10 bg-white/80 shadow-sm"
               title={icon.title}
@@ -71,6 +71,9 @@ export function StackIcons({ tech }: StackIconsProps) {
               >
                 <path d={icon.path} />
               </svg>
+            </span>
+            <span className="pointer-events-none absolute -top-9 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-md bg-[#2a211c] px-2 py-1 text-xs text-white opacity-0 shadow-md transition-opacity duration-150 group-hover:opacity-100">
+              {icon.title}
             </span>
           </li>
         );

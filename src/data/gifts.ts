@@ -49,6 +49,7 @@ export type Gift = {
   link: GiftLink;
   summary: string;
   stack: TechId[];
+  technical: string[];
   screenshot?: {
     src: string;
     alt: string;
@@ -68,6 +69,11 @@ export const gifts: Gift[] = [
     summary:
       "A family-tree app for building shared ancestry profiles, mapping relatives, and exploring heritage in one calm place.",
     stack: ["nextjs", "typescript", "tailwindcss", "supabase", "postgresql", "vercel"],
+    technical: [
+      "The frontend is a Next.js app that keeps the tree, member profiles, and globe views in sync from a shared family data model.",
+      "Supabase handles authentication and the relational family records so households can join an existing network or start their own cleanly.",
+      "Image export and demo-friendly heritage views sit on top of the same core relationships instead of branching into a separate mock system.",
+    ],
     screenshot: {
       src: "/gift-shots/legatree.png",
       alt: "LegaTree landing page",
@@ -84,6 +90,11 @@ export const gifts: Gift[] = [
     summary:
       "An AI tool that turns your facts, headshot, and screenshots into an editable, shareable Wikipedia-style biography.",
     stack: ["nextjs", "typescript", "tailwindcss", "supabase", "googlegemini", "vercel"],
+    technical: [
+      "Users upload a headshot and screenshots, then a Next.js flow packages that intake for Gemini-based article generation.",
+      "Supabase stores drafts and published slugs so sections can be regenerated without losing the rest of the page.",
+      "Editing tools let the user revise individual sections and infobox content instead of rerunning the entire pipeline every time.",
+    ],
     screenshot: {
       src: "/gift-shots/wikime.png",
       alt: "WikiMe homepage",
@@ -100,6 +111,11 @@ export const gifts: Gift[] = [
     summary:
       "An iOS Punjabi-learning app with structured lessons, flashcards, offline progress sync, and a curriculum API.",
     stack: ["swift", "sqlite", "nodedotjs", "express", "openapiinitiative"],
+    technical: [
+      "The iOS client is built in SwiftUI and caches learner progress locally in SQLite so lessons still work offline.",
+      "A Node and Express API serves curriculum data and accepts sync batches when the device reconnects.",
+      "Flashcards, review state, and lesson progression all read from the same structured curriculum model.",
+    ],
   },
   {
     id: "ethnic-mapper",
@@ -112,6 +128,11 @@ export const gifts: Gift[] = [
     summary:
       "A live demographic map for exploring clustered ethnic groups, regional context, and comparison tables without spreadsheet pain.",
     stack: ["react", "typescript", "mapbox", "vercel"],
+    technical: [
+      "A React and TypeScript frontend renders Mapbox clusters and region overlays from a shared geographic dataset.",
+      "Selection state drives both the map and the side panel, so clicking a point immediately updates the explanatory content and comparison tables.",
+      "The deployed app also exposes an embed-friendly mode built on the same data pipeline.",
+    ],
     screenshot: {
       src: "/gift-shots/ethnic-mapper.png",
       alt: "EthnoMapper map view",
@@ -128,6 +149,11 @@ export const gifts: Gift[] = [
     summary:
       "A daily mini-crossword app with accounts, puzzle browsing, keyboard-first solving, timers, and leaderboard tracking.",
     stack: ["nextjs", "typescript", "tailwindcss", "supabase", "postgresql", "vercel"],
+    technical: [
+      "The app uses Next.js and Supabase Auth to connect sign-in, puzzle browsing, and gameplay inside one product flow.",
+      "Crossword files are normalized into a consistent board format so keyboard navigation, timers, and validation behave predictably.",
+      "Solve times are written back to Postgres for leaderboard comparisons.",
+    ],
     screenshot: {
       src: "/gift-shots/mymini.png",
       alt: "MyMini login page",
@@ -144,6 +170,11 @@ export const gifts: Gift[] = [
     summary:
       "A realtime head-to-head trivia game with matchmaking, fair scoring, and live match state syncing.",
     stack: ["swift", "supabase", "postgresql"],
+    technical: [
+      "SwiftUI drives the match UI while Supabase handles authentication and shared multiplayer state.",
+      "Questions, scores, and round timing are synchronized through Postgres-backed realtime updates instead of local-only timers.",
+      "Fairness checks and latency simulations sit behind the game logic so the match loop stays trustworthy.",
+    ],
   },
   {
     id: "cornerapp",
@@ -156,6 +187,11 @@ export const gifts: Gift[] = [
     summary:
       "An iOS fact-pack reader built around swiping, reactions, comments, profiles, and stats that feel product-grade.",
     stack: ["swift", "firebase"],
+    technical: [
+      "The app is split into dedicated iOS controllers and managers for auth, fact packs, comments, and profiles.",
+      "Firebase stores users, reactions, and content so social actions update across the app quickly.",
+      "Swipe interactions sit on top of a more structured engagement model than the UI suggests at first glance.",
+    ],
   },
   {
     id: "pga",
@@ -168,6 +204,11 @@ export const gifts: Gift[] = [
     summary:
       "A client site for the DFW Punjabi Golf Club with polished community pages, schedules, galleries, and future admin hooks.",
     stack: ["react", "typescript", "framer", "vercel"],
+    technical: [
+      "The site is a React and TypeScript frontend with Framer Motion used for restrained transitions between content-heavy sections.",
+      "Shared components keep schedules, member pages, and galleries visually consistent across mobile and desktop.",
+      "An admin-oriented content layer was left scaffolded so the club can evolve the site later without starting over.",
+    ],
     screenshot: {
       src: "/gift-shots/pga.png",
       alt: "DFW Punjabi Golf Club homepage",
@@ -184,6 +225,11 @@ export const gifts: Gift[] = [
     summary:
       "A calm gurdwara website that makes prayer times, announcements, location details, and community information easy to find.",
     stack: ["astro", "tailwindcss", "vercel"],
+    technical: [
+      "The site is statically generated with Astro, which keeps pages fast and simple for a community audience.",
+      "Content is organized so prayer times, announcements, and contact details stay easy to update and easy to find.",
+      "The visual layer does most of the storytelling while the structure stays lightweight and dependable.",
+    ],
     screenshot: {
       src: "/gift-shots/gssofnt.png",
       alt: "Gurdwara Singh Sabha homepage",
@@ -196,10 +242,15 @@ export const gifts: Gift[] = [
     color: "#5c4d7a",
     iconColor: "#f0ecf7",
     icon: "code",
-    link: { type: "github", url: "https://github.com/ishanbrar/DFWSS2" },
+    link: { type: "site", url: "https://astrocitrus.netlify.app" },
     summary:
       "A redesigned Astro Citrus demo focused on typography, article layout, docs, and responsive reading.",
     stack: ["astro", "tailwindcss", "netlify"],
+    technical: [
+      "This fork keeps Astro Citrus's content pipeline but reworks the theme layers, typography, and layout pacing.",
+      "Tailwind utilities handle most of the visual system so docs, blog, and landing pages stay consistent.",
+      "The deployed Netlify build acts as a live proof that the customized theme still behaves like a coherent reading product.",
+    ],
     screenshot: {
       src: "/gift-shots/dfwss2.png",
       alt: "Astro Citrus homepage",
@@ -216,6 +267,11 @@ export const gifts: Gift[] = [
     summary:
       "A Telegram Punjabi tutor that tracks progress, teaches through structured lessons, and replies like a real ustaad.",
     stack: ["telegram", "nodedotjs", "openapiinitiative"],
+    technical: [
+      "A Node.js Telegram bot reads from a structured curriculum file and tracks progress state per learner.",
+      "Lesson prompts and session history are stored so the bot can continue a teaching thread instead of replying statelessly.",
+      "The teaching loop is built around Telegram messaging first, with automation and voice layered on top.",
+    ],
   },
   {
     id: "bot-jarjar",
@@ -228,5 +284,10 @@ export const gifts: Gift[] = [
     summary:
       "A Telegram assistant that pairs Gemini chat with scheduled quotes, weather check-ins, and home-server automation.",
     stack: ["telegram", "googlegemini", "openrouter", "nodedotjs"],
+    technical: [
+      "Telegram messages are routed through a Node.js gateway into Gemini via OpenRouter.",
+      "Scheduled jobs post quotes and weather updates using the same bot infrastructure that handles direct chat.",
+      "Home-server scripts keep the bot environment restartable and easier to recover if anything breaks.",
+    ],
   },
 ];
