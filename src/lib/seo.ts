@@ -5,7 +5,8 @@ export const personName = "Ishan Singh Brar";
 export const personShortName = "Ishan Brar";
 
 export const siteTitle = "Ishan Brar: A Portfolio";
-export const siteDescription = "Congratulations, you are now breathing manually";
+export const siteDescription =
+  "\"I can show you the ropes, but you'd probably start chewing on them\" - JJS, 2024.";
 
 export const githubUrl = "https://github.com/ishanbrar";
 

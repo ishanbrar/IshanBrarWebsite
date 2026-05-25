@@ -7,8 +7,9 @@ export function HomeSeoContent() {
     <section className="sr-only" aria-label="About this site">
       <h1>Ishan Brar: A Portfolio</h1>
       <p>
-        Congratulations, you are now breathing manually. This is the portfolio website of{" "}
-        {personName}, also known as {personShortName}.{" "}
+        &quot;I can show you the ropes, but you&apos;d probably start chewing on them&quot; - JJS,
+        2024. This is the portfolio website of {personName}, also known as{" "}
+        {personShortName}.{" "}
         <Link href="/me">About {personShortName}</Link>
       </p>
     </section>
