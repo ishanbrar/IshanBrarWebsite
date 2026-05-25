@@ -5,8 +5,7 @@ export const personName = "Ishan Singh Brar";
 export const personShortName = "Ishan Brar";
 
 export const siteTitle = `${personName} — Portfolio`;
-export const siteDescription =
-  "Ishan Singh Brar (Ishan Brar) — B.S. Computer Science, CISSP, builder of LegaTree, WikiMe, EthnoMapper, and other apps. Portfolio and bio.";
+export const siteDescription = "Congratulations, you are now breathing manually";
 
 export const githubUrl = "https://github.com/ishanbrar";
 
@@ -43,8 +42,8 @@ export function websiteJsonLd() {
   };
 }
 
-/** Favicon + Open Graph / share preview (animated GIF). */
-export const brandImagePath = "/icons/user.gif";
+/** Static icon assets work better for Google, browser tabs, and share cards. */
+export const brandImagePath = "/brand-icon.png";
 
 export function buildSiteMetadata(overrides?: Metadata): Metadata {
   const verification = process.env.GOOGLE_SITE_VERIFICATION;
@@ -70,8 +69,9 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
     robots: { index: true, follow: true },
     alternates: { canonical: siteUrl },
     icons: {
-      icon: [{ url: brandImagePath, type: "image/gif" }],
-      shortcut: [brandImagePath],
+      icon: [{ url: brandImagePath, type: "image/png" }],
+      shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
+      apple: [{ url: "/apple-touch-icon.png", type: "image/png" }],
     },
     openGraph: {
       type: "website",
@@ -80,7 +80,7 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
       siteName: personName,
       title: siteTitle,
       description: siteDescription,
-      images: [{ url: ogImage, type: "image/gif", alt: personName }],
+      images: [{ url: ogImage, type: "image/png", alt: personName }],
     },
     twitter: {
       card: "summary_large_image",
