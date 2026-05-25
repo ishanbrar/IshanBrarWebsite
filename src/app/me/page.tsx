@@ -46,9 +46,6 @@ export default function MePage() {
       <h1 className="mt-10 text-center font-[family-name:var(--font-serif)] text-3xl text-[#2a211c] sm:text-4xl">
         {personName}
       </h1>
-      <p className="mt-2 text-center text-sm text-[#6b5d52]">
-        Also known as {personShortName} — software engineer and builder.
-      </p>
 
       <div className="mt-12 space-y-8 font-serif text-[1.05rem] leading-relaxed text-[#4a3f38]">
         <p>
