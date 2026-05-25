@@ -4,7 +4,7 @@ import { siteUrl } from "@/lib/site";
 export const personName = "Ishan Singh Brar";
 export const personShortName = "Ishan Brar";
 
-export const siteTitle = `${personName} — Portfolio`;
+export const siteTitle = "Ishan Brar: A Portfolio";
 export const siteDescription = "Congratulations, you are now breathing manually";
 
 export const githubUrl = "https://github.com/ishanbrar";
@@ -34,7 +34,7 @@ export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: personName,
+    name: siteTitle,
     alternateName: personShortName,
     url: siteUrl,
     description: siteDescription,
@@ -65,6 +65,7 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
       "Ishan Brar projects",
     ],
     authors: [{ name: personName, url: siteUrl }],
+    applicationName: siteTitle,
     creator: personName,
     robots: { index: true, follow: true },
     alternates: { canonical: siteUrl },
@@ -77,7 +78,7 @@ export function buildSiteMetadata(overrides?: Metadata): Metadata {
       type: "website",
       locale: "en_US",
       url: siteUrl,
-      siteName: personName,
+      siteName: siteTitle,
       title: siteTitle,
       description: siteDescription,
       images: [{ url: ogImage, type: "image/png", alt: personName }],
