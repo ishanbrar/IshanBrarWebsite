@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  personJsonLd,
+  personName,
+  personShortName,
+  siteDescription,
+} from "@/lib/seo";
+import { siteUrl } from "@/lib/site";
+
+const meUrl = `${siteUrl}/me`;
 
 export const metadata: Metadata = {
-  title: "Me",
-  description:
-    "Ishan Singh Brar — B.S. Computer Science, CISSP, builder, golfer, and portfolio of apps and sites.",
+  title: `About ${personShortName}`,
+  description: siteDescription,
+  alternates: { canonical: meUrl },
+  openGraph: {
+    title: `${personName} — Bio`,
+    description: siteDescription,
+    url: meUrl,
+  },
 };
 
 export default function MePage() {
   return (
     <main className="mx-auto flex min-h-[calc(100vh-3.5rem)] max-w-2xl flex-col items-center px-6 py-12 sm:py-16">
+      <JsonLd data={personJsonLd({ pageUrl: meUrl })} />
       <Link
         href="/"
         className="mb-8 text-sm text-[#6b5d52] underline-offset-4 hover:text-[#2a211c] hover:underline"
@@ -28,8 +44,11 @@ export default function MePage() {
         />
       </div>
       <h1 className="mt-10 text-center font-[family-name:var(--font-serif)] text-3xl text-[#2a211c] sm:text-4xl">
-        Ishan Singh Brar
+        {personName}
       </h1>
+      <p className="mt-2 text-center text-sm text-[#6b5d52]">
+        Also known as {personShortName} — software engineer and builder.
+      </p>
 
       <div className="mt-12 space-y-8 font-serif text-[1.05rem] leading-relaxed text-[#4a3f38]">
         <p>

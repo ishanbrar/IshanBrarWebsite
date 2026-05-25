@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Noto_Sans_Gurmukhi, Oswald } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
-import { siteUrl } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { buildSiteMetadata, personJsonLd, personName, websiteJsonLd } from "@/lib/seo";
 
 const sans = DM_Sans({
   subsets: ["latin"],
@@ -27,14 +29,7 @@ const espn = Oswald({
   variable: "--font-espn",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Ishan Singh Brar",
-    template: "%s · Ishan Singh Brar",
-  },
-  description: "A minimalist portfolio of projects by Ishan Singh Brar.",
-  metadataBase: new URL(siteUrl),
-};
+export const metadata: Metadata = buildSiteMetadata();
 
 export default function RootLayout({
   children,
@@ -47,9 +42,25 @@ export default function RootLayout({
       className={`${sans.variable} ${serif.variable} ${gurmukhi.variable} ${espn.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans text-[#3a2f28]">
+        <JsonLd data={[personJsonLd(), websiteJsonLd()]} />
         <div className="flex-1">{children}</div>
-        <footer className="relative z-30 border-t border-white/20 bg-white/25 py-5 text-center text-xs tracking-wide text-[#6b5d52] backdrop-blur-md">
-          <p>© {new Date().getFullYear()} Ishan Singh Brar</p>
+        <footer className="relative z-30 border-t border-white/20 bg-white/25 px-4 py-5 text-center backdrop-blur-md">
+          <p className="text-xs tracking-wide text-[#6b5d52]">
+            © {new Date().getFullYear()} {personName}
+          </p>
+          <p className="mt-1 text-xs text-[#6b5d52]">
+            <Link href="/me" className="underline-offset-2 hover:text-[#2a211c] hover:underline">
+              About Ishan Brar
+            </Link>
+            {" · "}
+            <a
+              href="https://github.com/ishanbrar"
+              className="underline-offset-2 hover:text-[#2a211c] hover:underline"
+              rel="me noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
         </footer>
       </body>
     </html>
